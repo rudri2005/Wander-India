@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Explore India </title>
+    <link rel="stylesheet" href="varanasi.css">
+</head>
+<body>
+<!--------------------------------------------------- Header/Navbar -------------------------------------------------------->
+ <header class="navbar">
+    <div class="container">
+      <div class="logo">Explore India</div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="Destinations.html">Destinations</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="toggle-btn" id="toggle-btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <!-- Dropdown Menu (for mobile) -->
+    <div class="dropdown-menu" id="dropdown-menu">
+      <a href="index.html">Home</a>
+      <a href="Destinations.html">Destinations</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+   <!----------------------------------------------------Hero Section------------------------------------------------------------ -->
+  <section class="hero" id="hero">
+    <div class="overlay"></div>
+    <div class="hero-text">
+      <h1>Varanasi - The Spiritual Heart Of India</h1>
+    </div>
+  </section>
+<!------------------------------------------------------------overview of agra--------------------------------------------->
+   <div class="overview-container">
+    <div class="text-section">
+      <h1>The Eternal City of Varanasi</h1>
+      <p>Varanasi, also known as Kashi or Benares, is one of the oldest continuously inhabited cities in the world and holds deep spiritual, cultural, and historical significance in India. Located on the banks of the sacred River Ganga in Uttar Pradesh, it is revered as the spiritual capital of the country and is believed to have been founded by Lord Shiva. Mentioned in ancient texts like the Rigveda, Varanasi has been a center of learning, philosophy, and devotion for over 3,000 years. It played a crucial role in the rise of Hinduism, Buddhism (with nearby Sarnath being the site of Buddha’s first sermon), and Jainism. Despite facing invasions and destruction during the medieval period, the city preserved its identity and witnessed a revival during the colonial era with the establishment of institutions like Banaras Hindu University. Today, Varanasi continues to enchant visitors with its vibrant ghats, ancient temples, spiritual rituals, and timeless charm, symbolizing the enduring soul of India.
+      </p>
+    </div>
+    <div class="image-section">
+      <img src="Details/varanasi.jpg" alt=""/>
+    </div>
+  </div>
+  <!-------------------------------------------top place to visit in agra----------------------------------------->
+<h2>Top Places to Visit</h2>
+  <div class="carousel-wrapper">
+    <button class="carousel-btn prev-btn">&#8592;</button>
+    <div class="carousel-container">
+      <div class="carousel-track">
+        <div class="carousel-card">
+          <div class="image-wrapper">
+            <img src="Details/varanasi-chunarFort.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+          <span>Chunar Fort</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+            <img src="Details/varanasi-Bharat_Kala_Bhavan_Museum.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+          <span>Bharat Kala Bhavan Museum</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+            <img src="Details/varanasi-Ramnagar_Fort.jfif" alt="">
+            <div class="overlay"></div>
+          </div>
+            <span>Ramnagar Fort</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+           <img src="Details/varanasi-Nepali-Temple.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+          <span>Nepali Temple</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+             <img src="Details/varanasi-kasiVishwanath-temple.jfif" alt="">
+            <div class="overlay"></div>
+          </div>
+          <span>Kasi Vishwanath Temple</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+           <img src="Details/varanasi-Sarnath.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+           <span>Sarnath</span>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-btn next-btn">&#8594;</button>
+  </div>
+  <div class="carousel-dots"></div>
+<!-------------------------------------------------------------facts--------------------------------------------------->
+   <div class=" fact-container">
+    <div class="image-box">
+      <img src="Details/varanasi-fact-gangaarti.jpg" alt="Tourist circuit image">
+    </div>
+    <div class="text-box">
+      <h2>Fantastic Facts</h2>
+      <p>The Ganga Aarti in Varanasi is a grand spiritual ritual performed every evening at Dashashwamedh Ghat, one of the city's most prominent riverfront steps. Conducted by a group of priests dressed in traditional attire, the ceremony involves synchronized chanting, ringing of bells, blowing of conch shells, and the waving of large brass lamps (deepams) in devotion to the River Ganga, which is worshipped as a goddess. This mesmerizing ritual attracts thousands of devotees and tourists daily and symbolizes the deep reverence that the people of Varanasi hold for the sacred river. The Aarti is especially spectacular during festivals like Dev Deepawali when the ghats are illuminated with thousands of oil lamps.
+      </p>
+    </div>
+  </div>
+<!--------------------------------------------------informations------------------------------------------------------>
+<h2>Explore Varanasi</h2>
+<div class="tab-bar">
+  <div class="tab active" onclick="showTab('attractions')">Top Attractions</div>
+  <div class="tab" onclick="showTab('food')">Local Food</div>
+  <div class="tab" onclick="showTab('tips')">Travel Tips</div>
+  <div class="tab" onclick="showTab('contact')">Contact</div>
+</div>
+
+<div id="attractions" class="info-container active">
+  <div class="attraction-grid">
+    <div class="card">
+        <img src="Details/varanasi-fact-gangaarti.jpg" alt="">
+        <div class="card-body">
+          <h4>Ganaga Aarti</h4>
+          <p>A spiritual evening ritual held on the banks of the Ganges, involving lamps, chants, and music.
+            <br> Dashashwamedh Ghat, Varanasi
+            <br>October to March; attend at sunset (around 6–7 PM) for the full experience.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Details/varanasi-kasiVishwanath-temple.jfif" alt="">
+        <div class="card-body">
+          <h4>Kasi Vishwanath Temple</h4>
+          <p>One of the twelve Jyotirlingas and the most revered temple of Lord Shiva.
+            <br>Vishwanath Gali, near the Ganga River, Varanasi
+            <br>October to February; visit early morning (before 9 AM) to avoid heavy crowds.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Details/varanasi-Sarnath.jpg" alt="">
+        <div class="card-body">
+          <h4>Sarnath</h4>
+          <p>A major Buddhist site where Lord Buddha gave his first sermon.
+            <br>About 10 km from Varanasi city
+            <br>November to February; mornings are ideal for exploring the site comfortably.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Details/varanasi-chunarFort.jpg" alt="">
+        <div class="card-body">
+          <h4>Chunar Fort</h4>
+          <p>A historical fort with ties to various dynasties including the Mughals and British
+            <br>Chunar, around 40 km from Varanasi
+            <br>October to March; good weather for sightseeing and photography.</p>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div id="food" class="info-container">
+  <div class="food-grid">
+     <div class="card">
+        <img src="Details/varanasi-KachoriSabzi.jpg" alt="">
+        <div class="card-body">
+          <h4>Ram Bhandar-Kachori Sabzi</h4>
+          <p>Kachori Sabzi is the most popular breakfast dish in Varanasi.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Details/varanasi-chooraMatar.jpg" alt="">
+        <div class="card-body">
+          <h4>Gopal Mandir Gali</h4>
+          <p>This street food is a Varanasi version of Maharashtrian Poha and Poha Chiwda of Bihar</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Details/varanasi-malaiyyo.jpg" alt="">
+        <div class="card-body">
+          <h4> Neelkanth and Kachori Gali</h4>
+          <p>Malaiyyo - Famous Sweet of Banaras</p>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div id="tips" class="info-container">
+    <div class="travel-tips">
+      <img src="Details/varanasi.jpg" alt="Tips Background">
+     <div class="tip-details">
+        <div><strong>👜 Shopping:</strong> Shop for Banarasi silk sarees, wooden toys, perfumes (ittar), and brassware. Best places: Vishwanath Gali, Thatheri Bazaar.</div>
+  <div><strong>🚕 Transport:</strong> Use auto-rickshaws or walk in the narrow lanes. Cycle rickshaws and boats are popular near the ghats. Avoid driving yourself.</div>
+  <div><strong>⚠️ Safety:</strong> Keep belongings secure, beware of pickpockets in crowded areas, and politely decline persistent touts. Drink bottled water only.</div>
+  <div><strong>📅 Best Time:</strong> November–February. Pleasant weather and major festivals like Dev Deepawali make it ideal for visits.</div>
+  <div><strong>🎟️ Entry Tickets:</strong> Temples are mostly free; some cultural shows or museums may charge small fees. Boat rides can vary in price—negotiate or book in advance.</div>
+     </div>
+    </div>
+</div>
+
+<div id="contact" class="info-container">
+  <div class="contact-info">
+    <img src="Contact-Us/contactus1.jfif" alt="Contact">
+    <div class="contact-details">
+      <strong>Contact Info Center</strong>
+      <p>India’s Tourism, MI Road Delhi</p>
+        <p>📞 +91 141 2822863</p>
+        <p>📧 info@indiatourism.gov.in</p>
+        <p>🕘 Mon–Sat, 9:00AM–6:00PM</p>
+    </div>
+  </div>
+</div>
+<!----------------------------------------------------------------------maps------------------------------------------->
+<div class="map-container">
+  <h2>Visit The Varanasi</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30766738.48171446!2d60.9691763862997!3d19.725163578221917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1748703432187!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<p><a href=" https://maps.google.com" target="_blank">📍 Open in Google Maps</a></p>
+  <!------------------------------------------------------------------- Footer ---------------------------------------------------------------->
+<!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col about">
+        <h3>About Us</h3>
+        <p>
+          Explore india is a simple travel guide to help you discover beautiful place across India. 
+          From historic monuments to scenic landscape, we aim to make your journey more exciting 
+          and informed - no sign-up just exploration.
+        </p>
+      </div>
+      <div class="footer-col links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Destinations.html">Destinations</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col contact">
+        <h3>Get in touch</h3>
+         <p><i class="fas fa-map-marker-alt red-icon"></i> 3rd Floor, MG Road, New Delhi.</p>
+         <p><i class="fas fa-envelope red-icon"></i> info@exploreindia.com</p>
+         <p><i class="fas fa-phone red-icon"></i> +91 98765 43210</p>
+         <p><i class="fab fa-instagram red-icon"></i> Contact@exploreindia</p>
+      </div>
+      <div class="footer-col gallery">
+        <h3>Gallery</h3>
+        <table>
+          <tr>
+            <td colspan="2"><img src="Images/footer1.jpg" alt="Gallery 1" /></td>
+          </tr>
+          <tr>
+            <td><img src="images/footer2.jfif" alt="Gallery 2" /></td>
+            <td><img src="Images/footer3.jfif" alt="Gallery 3" /></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Explore India. All right reserved.</p>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="service.html">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+<script src="varanasi.js"></script>
+</body>
+</html>

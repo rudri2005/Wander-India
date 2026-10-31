@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <title>Explore India </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--------------------------------------------------- Header/Navbar -------------------------------------------------------->
+ <header class="navbar">
+    <div class="container">
+      <div class="logo">Explore India</div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="Destinations.html">Destinations</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="toggle-btn" id="toggle-btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+
+    <!-- Dropdown Menu (for mobile) -->
+    <div class="dropdown-menu" id="dropdown-menu">
+      <a href="index.html">Home</a>
+      <a href="Destinations.html">Destinations</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <!---------------------------------------------------------- Hero Section ----------------------------------------->
+  <section class="hero" id="home">
+    <div class="overlay"></div>
+    <div class="hero-text">
+      <h1>EXPLORE INDIA</h1>
+      <h3>Discover The culture, Heritage, and Beauty of India’s Top destination</h3>
+      <button onclick="location.href='Destinations.html'">Explore More</button>
+    </div>
+  </section>
+<!-------------------------------------------------------------- featured destination Section ------------------------------------------------->
+<section class="featured-section">
+  <div class="section-header">
+    <h2>Featured Destination</h2>
+    <a href="Destinations.html" class="explore-link">
+      Explore More Destination <i class="fas fa-arrow-right"></i>
+    </a>
+  </div>
+  <div class="destination-grid">
+    <!-- Agra -->
+    <div class="destination-card">
+      <img src="Images/photo-1524492412937-b28074a5d7da.jfif" alt="Agra">
+      <div class="card-info">
+        <div class="card-center">
+          <h3>Agra</h3>
+          <p>Home of Taj Mahal</p>
+        </div>
+        <a href="detail-agra.html" class="learn-btn">Learn More</a>
+      </div>
+    </div>
+    <!-- Jaipur -->
+    <div class="destination-card">
+      <img src="Images/jaipur.jfif" alt="Jaipur">
+      <div class="card-info">
+        <div class="card-center">
+          <h3>Jaipur</h3>
+          <p>The Pink City</p>
+        </div>
+        <a href="jaipur.html" class="learn-btn">Learn More</a>
+      </div>
+    </div>
+    <!-- Kerala -->
+    <div class="destination-card">
+      <img src="Images/kerala1.jpg" alt="Kerala">
+      <div class="card-info">
+        <div class="card-center">
+          <h3>Kerala</h3>
+          <p>God's Own Country</p>
+        </div>
+        <a href="kerala.html" class="learn-btn">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!--------------------------------------------------------------- About Section ---------------------------------------------------------------->
+   <section class="about-section">
+    <div class="about-container">
+      <div class="about-text">
+        <h2>About Us</h2>
+        <p>
+          Explore India is a simple travel guide to help you discover beautiful places across India.
+          From historic monuments to scenic landscapes, we aim to make your journey more exciting and informed — no sign-up, just exploration.
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="Images/home-aboutus.jpg" alt="Varanasi" />
+      </div>
+    </div>
+  </section>
+<!------------------------------------------------------------ Popular Places Carousel --------------------------------------------------------->
+<div class="slider-container">
+  <h2 class="title">Most Popular Places</h2>
+  <div class="slider">
+    <button class="nav-btn prev">&#8592;</button>
+    <div class="slider-window">
+      <div class="slider-track">
+        <!-- 15 Cards -->
+        <div class="card"><div class="card-overlay"><img src="Images/gateway-of-india.jpg"><p>The Gateway Of India</p></div></div>
+        <div class="card"><div class="card-overlay"><img src="Images/anjuna-beach.jpg"><p>Anjuna Beach</p></div></div>
+        <div class="card"><div class="card-overlay"><img src="Images/naida-caves.jfif"><p>Naida Caves</p></div></div>
+        <div class="card"><div class="card-overlay"><img src="Images/GULMARG.jpg"><p>Gulmarg</p></div></div>
+        <div class="card"><div class="card-overlay"><img src="Images/JAISALMER.jpg"><p>Jaisalmer</p></div></div>
+        <div class="card"><div class="card-overlay"><img src="Images/LAKSHADWEEP-ISLANDS.jpg"><p>Lakshadweep</p></div></div>
+        <div class="card"><div class="card-overlay"><img src="Images/MUNNAR.jpg"><p>Munnar</p></div></div>
+        <div class="card"><div class="card-overlay"><img src="Images/OOTY.jpg"><p>Ooty</p></div></div>
+        <div class="card"><div class="card-overlay"><img src="Images/PAHALGAM.jpg"><p>Pahalgam</p></div></div>
+        <div class="card"><div class="card-overlay"><img src="Images/COORG.jpg"><p>Coorg</p></div></div>
+        <div class="card"><div class="card-overlay"><img src="Images/DARJEELING.jpg"><p>Darjeeling</p></div></div>
+        <div class="card"><div class="card-overlay"><img src="Images/LADAKH.jpg"><p>Ladakh</p></div></div>
+        <div class="card"><div class="card-overlay"><img src="Images/MANALI.jpg"><p>Manali</p></div></div>
+        <div class="card"><div class="card-overlay"><img src="Images/SHIMLA.jpg"><p>Shimla</p></div></div>
+        <div class="card"><div class="card-overlay"><img src="Images/SRINAGAR.jpg"><p>Srinagar</p></div></div>
+      </div>
+    </div>
+    <button class="nav-btn next">&#8594;</button>
+  </div>
+  <div class="dots-container"></div>
+</div>
+<!------------------------------------------------ Recommendations ------------------------------------------------>
+<section class="recommendation">
+  <h2>Recommendation For You</h2>
+  <div class="grid-container">
+    <div class="rec-card" style="background-image: url('Images/wildlife1.jfif');">
+      <div class="overlay"></div>
+      <div class="label">Wild-life</div>
+    </div>
+    <div class="rec-card" style="background-image: url('Images/haritage1.jfif');">
+      <div class="overlay"></div>
+      <div class="label">Heritages</div>
+    </div>
+    <div class="rec-card" style="background-image: url('Images/spiritual.jfif');">
+      <div class="overlay"></div>
+      <div class="label">Spirituals</div>
+    </div>
+    <div class="rec-card" style="background-image: url('Images/beach.jfif');">
+      <div class="overlay"></div>
+      <div class="label">Beaches</div>
+    </div>
+    <div class="rec-card" style="background-image: url('Images/nature.jfif');">
+      <div class="overlay"></div>
+      <div class="label">Nature & Landscapes</div>
+    </div>
+    <div class="rec-card" style="background-image: url('Images/advanture.jfif');">
+      <div class="overlay"></div>
+      <div class="label">Adventures</div>
+    </div>
+  </div>
+</section>
+ <!------------------------------------------------------------------- Footer ---------------------------------------------------------------->
+ <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col about">
+        <h3>About Us</h3>
+        <p>
+          Explore india is a simple travel guide to help you discover beautiful place across India. 
+          From historic monuments to scenic landscape, we aim to make your journey more exciting 
+          and informed - no sign-up just exploration.
+        </p>
+      </div>
+      <div class="footer-col links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Destinations.html">Destinations</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col contact">
+        <h3>Get in touch</h3>
+         <p><i class="fas fa-map-marker-alt red-icon"></i> 3rd Floor, MG Road, New Delhi.</p>
+         <p><i class="fas fa-envelope red-icon"></i> info@exploreindia.com</p>
+         <p><i class="fas fa-phone red-icon"></i> +91 98765 43210</p>
+         <p><i class="fab fa-instagram red-icon"></i> Contact@exploreindia</p>
+      </div>
+      <div class="footer-col gallery">
+        <h3>Gallery</h3>
+        <table>
+          <tr>
+            <td colspan="2"><img src="Images/footer1.jpg" alt="Gallery 1" /></td>
+          </tr>
+          <tr>
+            <td><img src="images/footer2.jfif" alt="Gallery 2" /></td>
+            <td><img src="Images/footer3.jfif" alt="Gallery 3" /></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Explore India. All right reserved.</p>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="service.html">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+      <script src="script.js"></script>
+</body>
+</html>
+

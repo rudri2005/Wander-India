@@ -1,0 +1,451 @@
+:root{
+  --gray: gray;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: Arial,Poppins, sans-serif;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background:rgb(190, 188, 188);
+  color: #222;
+}
+/*--------------------------------------------------------Home (index) Page  Navbar----------------------------------------------------------------- */
+ /* Navbar */
+    .navbar {
+      background: #000;
+      color: #fff;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .navbar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+      position: relative;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .nav-links a:hover {
+      color: red;
+    }
+    .toggle-btn {
+      color: white;
+      font-size: 1.5rem;
+      cursor: pointer;
+      display: none;
+    }
+    /* Dropdown Menu */
+    .dropdown-menu {
+      position: absolute;
+      right: 2rem;
+      top: 60px;
+      background: #111;
+      backdrop-filter: blur(15px);
+      border-radius: 10px;
+      overflow: hidden;
+      display: none;
+      flex-direction: column;
+      width: 250px;
+      transition: all 0.3s ease;
+      z-index: 999;
+    }
+    .dropdown-menu a {
+      padding: 1rem;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      border-bottom: 1px solid #222;
+    }
+
+    .dropdown-menu a:hover {
+      background: #222;
+    }
+    /* Responsive */
+    @media (max-width: 992px) {
+      .nav-links {
+        display: none;
+      }
+      .toggle-btn {
+        display: block;
+      }
+     .dropdown-menu.show {
+        display: flex;
+      }
+    }
+    @media (max-width: 576px) {
+      .dropdown-menu {
+        right: 1rem;
+        width: 90%;
+      }
+    }
+/*-----------------------------------------------------------Home page - Hero Section-------------------------------------------------------- */
+.hero {
+  position: relative;
+  background-image: url('Contact-Us/Pichola-Lake-Udaipur.webp');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  z-index: 1;
+}
+
+.hero-text {
+  z-index: 2;
+  position: relative;
+  max-width: 800px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.hero-text h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero h3 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .hero {
+    padding: 0 10px;
+  }
+  .hero h3 {
+    font-size: 1.5rem;
+  }
+  .hero p {
+    font-size: 0.95rem;
+  }
+}
+---------------------------------------------------------------forms---------------------------------------------/
+.contact-section {
+  padding: 40px 20px;
+  background-color:rgb(190, 188, 188);
+  animation: fadeIn 1s ease-in;
+}
+.contact-section h2 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  margin-left: 18%;
+}
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+  animation: slideUp 1s ease-in;
+  width: 100%;
+}
+.contact-form {
+  background-color: #000;
+  color: #fff;
+  padding: 35px 30px;border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  animation: popIn 0.8s ease-in;
+}
+.contact-form label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+}
+.contact-form textarea {
+  resize: none;
+}
+.contact-form button {
+  background-color: #e63946;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+.contact-form button:hover {
+  background-color: #d62828;
+}
+.image-table-container {
+  max-width: 500px;
+  width: 100%;
+  animation: slideRight 1s ease;
+}
+.image-table {
+  border-spacing: 10px;
+  width: 100%;
+}
+.image-table img {
+  width: 100%;
+  height: 150px;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.image-table img:hover {
+  transform: scale(1.03);
+}
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+@keyframes slideRight {
+  from { transform: translateX(-30px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+@keyframes popIn {
+  0% { transform: scale(0.95); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .image-table {
+    border-spacing: 8px;
+  }
+  .image-table-container {
+    max-width: 100%;
+  }
+  .contact-form {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contact-section h2 {
+    font-size: 22px;
+  }
+  .contact-form {
+    padding: 20px;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px;
+  }
+  .contact-form button {
+    font-size: 14px;
+  }
+  .image-table img {
+    border-radius: 5px;
+  }
+}         
+ /*---------------------------------------------------------------Footer--------------------------------------------------------------- */
+.footer {
+  background-color: rgb(190, 188, 188);
+  padding: 40px 20px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-col.links {
+  margin-left: 80px;
+}
+
+.footer h3 {
+  margin-bottom: 15px;
+  font-size: 25px;
+}
+
+.footer p,
+.footer ul,
+.footer td {
+  font-size: 18px;
+  color: #333;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 8px;
+}
+
+.footer ul li a {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer ul li a:hover {
+  color: red;
+}
+.footer-col.contact i {
+  margin-right: 10px;
+  font-size: 18px;
+  color: black; /* Default icon color */
+}
+
+.footer-col.contact .red-icon {
+  color: red; /* Red color for selected icons */
+}
+
+.footer-col.gallery table {
+  border-spacing: 5px;
+}
+
+.footer-col.gallery img {
+  width: 100%;
+  height: 110px;
+  display: block;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-bottom p {
+  font-weight: medium;
+  color: white;
+}
+
+.footer-links a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: red;
+}
+
+/* ------------------------ Responsive CSS ------------------------ */
+
+@media (max-width: 1024px) {
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .footer-col {
+    flex: 1 1 45%;
+  }
+
+  .footer-col.links {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .footer-col {
+    flex: 1 1 100%;
+  }
+  .footer-col.gallery table {
+    width: 100%;
+  }
+
+  .footer-col.gallery td {
+    width: 50%;
+  }
+
+  .footer-col.gallery img {
+    height: 90px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .footer-links {
+    margin-top: 10px;
+  }
+
+  .footer-links a {
+    display: inline-block;
+    margin: 5px 10px 0;
+  }
+}

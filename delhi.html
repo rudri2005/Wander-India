@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Explore India </title>
+    <link rel="stylesheet" href="delhi.css">
+</head>
+<body>
+<!--------------------------------------------------- Header/Navbar -------------------------------------------------------->
+ <header class="navbar">
+    <div class="container">
+      <div class="logo">Explore India</div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="Destinations.html">Destinations</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="toggle-btn" id="toggle-btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <!-- Dropdown Menu (for mobile) -->
+    <div class="dropdown-menu" id="dropdown-menu">
+      <a href="index.html">Home</a>
+      <a href="Destinations.html">Destinations</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+ <!----------------------------------------------------Hero Section------------------------------------------------------------ -->
+  <section class="hero" id="hero">
+    <div class="overlay"></div>
+    <div class="hero-text">
+      <h1>Delhi - India's Capital City</h1>
+    </div>
+  </section>
+<!------------------------------------------------------------overview of agra--------------------------------------------->
+ <div class="overview-container">
+    <div class="text-section">
+      <h1>Delhi: The Heart of India</h1>
+      <p>Delhi, the capital of India, is a dynamic city where centuries of history meet modern life. Believed to be the site of the ancient city of Indraprastha from the Mahabharata, Delhi has been the seat of many powerful empires, including the Delhi Sultanate, the Mughals, and the British Raj. These rulers have left behind a rich architectural legacy seen in landmarks like the Red Fort, Jama Masjid, Qutub Minar, and India Gate. While Old Delhi preserves the charm of narrow lanes, bustling bazaars, and historic monuments, New Delhi showcases broad avenues, government buildings, and planned infrastructure. Today, Delhi is not only a political hub but also a cultural and economic powerhouse, reflecting the diverse spirit of India.
+      Today, Delhi stands as a bustling metropolis known for its historical landmarks, diverse cuisine, and cultural vibrancy.
+      </p>
+    </div>
+    <div class="image-section">
+      <img src="Details/Delhi.jpg" alt=""/>
+    </div>
+  </div>
+  <!-------------------------------------------top place to visit in agra----------------------------------------->
+<h2>Top Places to Visit</h2>
+  <div class="carousel-wrapper">
+    <button class="carousel-btn prev-btn">&#8592;</button>
+    <div class="carousel-container">
+      <div class="carousel-track">
+        <div class="carousel-card">
+          <div class="image-wrapper">
+            <img src="Details/RASHTRAPATI_BHAVAN.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+          <span>Rashtrapati Bhavan</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+           <img src="Details/delhi-lotustemple.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+          <span>Lotus Temple</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+            <img src="Details/Delhi_Red_fort.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+           <span>Red Fort</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+           <img src="Details/Gurudwara-BanglaSahib.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+          <span>Gurudwara BanglaSahib</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+            <img src="Details/Qutub_Minar.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+         <span>Qutub Minar</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+           <img src="Details/akshardham-temlpe.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+          <span>Akshardham Temple</span>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-btn next-btn">&#8594;</button>
+  </div>
+  <div class="carousel-dots"></div>
+<!-------------------------------------------------------------facts--------------------------------------------------->
+   <div class=" fact-container">
+    <div class="image-box">
+      <img src="Destinations/agra-facts.jfif" alt="Tourist circuit image">
+    </div>
+    <div class="text-box">
+      <h2>Fantastic Facts</h2>
+      <p>Agra also finds itself strategically placed on popular tourist circuits.
+        Explore the Golden Triangle tourist circuit, along with Delhi and Jaipur,
+        or delve deeper into the state’s rich culture through the Uttar Pradesh
+        Heritage Arc, connecting Agra to Lucknow, the state capital, and the holy
+        city of Varanasi.
+      </p>
+    </div>
+  </div>
+<!--------------------------------------------------informations------------------------------------------------------>
+<h2>Explore Delhi</h2>
+<div class="tab-bar">
+  <div class="tab active" onclick="showTab('attractions')">Top Attractions</div>
+  <div class="tab" onclick="showTab('food')">Local Food</div>
+  <div class="tab" onclick="showTab('tips')">Travel Tips</div>
+  <div class="tab" onclick="showTab('contact')">Contact</div>
+</div>
+
+<div id="attractions" class="info-container active">
+  <div class="attraction-grid">
+    <div class="card">
+        <img src="Details/RASHTRAPATI_BHAVAN.jpg" alt="">
+        <div class="card-body">
+          <h4>Rashtrapati Bhavan</h4>
+          <p>Official residence of the President of India;
+            <br> Raisina Hill, New Delhi
+            <br>February–March .</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Details/delhi-lotustemple.jpg" alt="">
+        <div class="card-body">
+          <h4>Lotus Temple</h4>
+          <p> Baháʼí House of Worship shaped like a lotus flower;
+            <br>Kalkaji, South Delhi
+            <br>October–March, early morning for pleasant weather</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Details/Qutub_Minar.jpg" alt="">
+        <div class="card-body">
+          <h4>Qutub Minar</h4>
+          <p>A UNESCO World Heritage Site and the tallest brick minaret in the world, showcasing Indo-Islamic architecture.
+            <br>Mehrauli, South Delhi
+            <br>October–March, preferably morning hours to avoid heat and crowd.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Details/Delhi_Red_fort.jpg" alt="">
+        <div class="card-body">
+          <h4>Red Fort</h4>
+          <p> Historic Mughal fort known for its red sandstone walls
+            <br> Netaji Subhash Marg, Old Delhi
+            <br>October–March; visit in the morning </p>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div id="food" class="info-container">
+  <div class="food-grid">
+     <div class="card">
+        <img src="Details/delhi-chholeBhature.webp" alt="">
+        <div class="card-body">
+          <h4>Chache Di Hatti</h4>
+          <p>Chhole Bhature - The Best Street Food in Delhi</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Details/delhi-paranthes.jpg" alt="">
+        <div class="card-body">
+          <h4> Paranthe Wali Gali</h4>
+          <p>Paranthe Wali Gali is this entire lane in Chandni Chowk that serves all kinds of stuffed parathas.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Details/delhi-jalabi.png" alt="">
+        <div class="card-body">
+          <h4>Old Famous Jalebi Wala</h4>
+          <p>Old Famous Jalebi Wala is one of the most famous sweet shops and street food spot in Old Delhi known for its fat and juicy jalebis </p>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div id="tips" class="info-container">
+    <div class="travel-tips">
+      <img src="Details/Delhi-tips.jpg" alt="Tips Background">
+     <div class="tip-details">
+   <div><strong>👜 Shopping:</strong> Explore local markets like Chandni Chowk, Sarojini Nagar, and Dilli Haat for clothes, spices, handicrafts, and souvenirs.</div>
+  <div><strong>🚕 Transport:</strong> Use the Delhi Metro for fast travel. Auto-rickshaws and cabs are widely available; use apps like Ola or Uber for convenience.</div>
+  <div><strong>⚠️ Safety:</strong> Stay alert in crowded areas, avoid isolated spots at night, and beware of pickpockets. Drink bottled water and check food hygiene.</div>
+  <div><strong>📅 Best Time:</strong> October–March. Pleasant weather for sightseeing. Avoid May–June due to extreme heat.</div>
+  <div><strong>🎟️ Entry Tickets:</strong> Major monuments like the Red Fort, Qutub Minar, and Humayun’s Tomb have online ticket options. Indian and foreigner prices may differ.</div>
+</div>
+    </div>
+</div>
+
+<div id="contact" class="info-container">
+  <div class="contact-info">
+    <img src="Contact-Us/contactus1.jfif" alt="Contact">
+    <div class="contact-details">
+      <strong>Contact Info Center</strong>
+      <p>India’s Tourism, MI Road Delhi</p>
+        <p>📞 +91 141 2822863</p>
+        <p>📧 info@indiatourism.gov.in</p>
+        <p>🕘 Mon–Sat, 9:00AM–6:00PM</p>
+    </div>
+  </div>
+</div>
+<!----------------------------------------------------------------------maps------------------------------------------->
+<div class="map-container">
+  <h2>Visit the Delhi</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30766738.48171446!2d60.9691763862997!3d19.725163578221917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1748703432187!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<p><a href=" https://maps.google.com" target="_blank">📍 Open in Google Maps</a></p>
+  <!------------------------------------------------------------------- Footer ---------------------------------------------------------------->
+<!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col about">
+        <h3>About Us</h3>
+        <p>
+          Explore india is a simple travel guide to help you discover beautiful place across India. 
+          From historic monuments to scenic landscape, we aim to make your journey more exciting 
+          and informed - no sign-up just exploration.
+        </p>
+      </div>
+      <div class="footer-col links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Destinations.html">Destinations</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col contact">
+        <h3>Get in touch</h3>
+         <p><i class="fas fa-map-marker-alt red-icon"></i> 3rd Floor, MG Road, New Delhi.</p>
+         <p><i class="fas fa-envelope red-icon"></i> info@exploreindia.com</p>
+         <p><i class="fas fa-phone red-icon"></i> +91 98765 43210</p>
+         <p><i class="fab fa-instagram red-icon"></i> Contact@exploreindia</p>
+      </div>
+      <div class="footer-col gallery">
+        <h3>Gallery</h3>
+        <table>
+          <tr>
+            <td colspan="2"><img src="Images/footer1.jpg" alt="Gallery 1" /></td>
+          </tr>
+          <tr>
+            <td><img src="images/footer2.jfif" alt="Gallery 2" /></td>
+            <td><img src="Images/footer3.jfif" alt="Gallery 3" /></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Explore India. All right reserved.</p>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="service.html">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+<script src="delhi.js"></script>
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Explore India </title>
+    <link rel="stylesheet" href="rishikesh.css">
+</head>
+<body>
+<!--------------------------------------------------- Header/Navbar -------------------------------------------------------->
+ <header class="navbar">
+    <div class="container">
+      <div class="logo">Explore India</div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="Destinations.html">Destinations</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="toggle-btn" id="toggle-btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <!-- Dropdown Menu (for mobile) -->
+    <div class="dropdown-menu" id="dropdown-menu">
+      <a href="index.html">Home</a>
+      <a href="Destinations.html">Destinations</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+   <!----------------------------------------------------Hero Section------------------------------------------------------------ -->
+  <section class="hero" id="hero">
+    <div class="overlay"></div>
+    <div class="hero-text">
+      <h1>Rishikesh - Yoga Capital Of The World</h1>
+    </div>
+  </section>
+<!------------------------------------------------------------overview of agra--------------------------------------------->
+    <div class="overview-container">
+    <div class="text-section">
+      <h1>The Yoga Capital of the World</h1>
+      <p>Rishikesh, located on the banks of the sacred Ganga River in Uttarakhand, is a serene town known for its spiritual significance, natural beauty, and adventure activities. It holds a revered place in Hindu mythology and has been a center for sages and saints since ancient times. The town gained global recognition when The Beatles visited the ashram of Maharishi Mahesh Yogi in 1968, sparking Western interest in yoga and meditation. Known as the “Gateway to the Garhwal Himalayas,” Rishikesh is dotted with temples, ashrams, and ghats, and is also a hub for river rafting, trekking, and camping. Its blend of spirituality and adventure draws both pilgrims and international travelers seeking peace and purpose.
+        Apart from its spiritual charm, Rishikesh is also an adventure hub—famous for white-water rafting, bungee jumping, and trekking. Landmarks like Laxman Jhula, Ram Jhula, and Parmarth Niketan add to its cultural and religious significance. Alcohol and non-vegetarian food are banned in the town, reflecting its sacred status.    </p>
+    </div>
+    <div class="image-section">
+      <img src="Details/rishikesh-arundhati-cave-meditation.jpg" alt=""/>
+    </div>
+  </div>
+  <!-------------------------------------------top place to visit in agra----------------------------------------->
+<h2>Top Places to Visit</h2>
+  <div class="carousel-wrapper">
+    <button class="carousel-btn prev-btn">&#8592;</button>
+    <div class="carousel-container">
+      <div class="carousel-track">
+        <div class="carousel-card">
+          <div class="image-wrapper">
+            <img src="Details/rishikesh-laxman-jhula.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+          <span>Laxman Jhula</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+             <img src="Details/rishikesh-river-rafting.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+          <span>River Rafting</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+            <img src="Details/rishikesh-paragliding.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+            <span>Paragliding</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+           <img src="Details/rishikesh-neerGarh-waterfall.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+           <span>Neer Garh Waterfall</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+             <img src="Details/rishikesh-jumpinHeights.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+          <span>Jumpin Height</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+           <img src="Details/rishikesh-bumgeeJumping.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+           <span>Bumgee Jumping</span>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-btn next-btn">&#8594;</button>
+  </div>
+  <div class="carousel-dots"></div>
+<!-------------------------------------------------------------facts--------------------------------------------------->
+   <div class=" fact-container">
+    <div class="image-box">
+      <img src="Details/rishikesh Fact--triveni-ghat.jpeg" alt="Tourist circuit image">
+    </div>
+    <div class="text-box">
+      <h2>Fantastic Facts</h2>
+      <p>Triveni Ghat is the largest and most sacred bathing ghat in Rishikesh, where three rivers—Ganga, Yamuna, and Saraswati—are believed to meet spiritually. It is renowned for the Ganga Aarti held every evening, a mesmerizing ritual with chanting, lamps, and devotional music that draws both devotees and tourists. Pilgrims take a holy dip here to cleanse their sins, and the ghat is also lined with temples, sadhus, and small shrines, making it a powerful spiritual hub in the city.
+      </p>
+    </div>
+  </div>
+<!--------------------------------------------------informations------------------------------------------------------>
+<h2>Explore Rishikesh</h2>
+<div class="tab-bar">
+  <div class="tab active" onclick="showTab('attractions')">Top Attractions</div>
+  <div class="tab" onclick="showTab('food')">Local Food</div>
+  <div class="tab" onclick="showTab('tips')">Travel Tips</div>
+  <div class="tab" onclick="showTab('contact')">Contact</div>
+</div>
+
+<div id="attractions" class="info-container active">
+  <div class="attraction-grid">
+    <div class="card">
+        <img src="Details/rishikesh-laxman-jhula.jpg" alt="">
+        <div class="card-body">
+          <h4>Laxman Jhula</h4>
+          <p> Iconic iron suspension bridge believed to be where Lord Laxman crossed the Ganga
+            <br> 5 km from Rishikesh town center
+            <br>October to March – pleasant weather for sightseeing and walking.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Details/rishikesh Fact--triveni-ghat.jpeg" alt="">
+        <div class="card-body">
+          <h4>Trivani Ghat</h4>
+          <p>Holiest bathing ghat where Ganga, Yamuna, and Saraswati are believed to meet spiritually. Famous for daily Ganga Aarti at sunset.
+            <br>Main Rishikesh town, near Rishikesh Railway Station
+            <br>October to March – attend the evening aarti for a spiritual experience.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Details/rishikesh-neerGarh-waterfall.jpg" alt="">
+        <div class="card-body">
+          <h4>Neer Garh Waterfall</h4>
+          <p>A beautiful multi-level natural waterfall with crystal-clear water, perfect for short treks and nature photography.
+            <br>Around 5 km from Laxman Jhula on the Badrinath Highway
+            <br>September to February – post-monsoon the waterfall is at its best.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Details/rishikesh-river-rafting.jpg" alt="">
+        <div class="card-body">
+          <h4>River Rafting</h4>
+          <p>Rishikesh is one of India’s top white-water rafting destinations
+            <br>Starts from Shivpuri, Marine Drive, or Brahmpuri and ends in Rishikesh
+            <br>October to June(closed during peak monsoon months, July–August)</p>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div id="food" class="info-container">
+  <div class="food-grid">
+     <div class="card">
+        <img src="Details/rishikesh-prem'sNamasteCafe.jpeg" alt="">
+        <div class="card-body">
+          <h4>Prem's Namaste Cafe</h4>
+          <p>Popular for Deserts</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Details/rishikesh-gangaBeachCafe.jpg" alt="">
+        <div class="card-body">
+          <h4>Ganga Beach Cafe</h4>
+          <p>Famous For Pastrys</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Details/rishikesh-greenItalian-restaurants.jpg" alt="">
+        <div class="card-body">
+          <h4>Green Italian Restaurants</h4>
+          <p>Famous for Italian dishes</p>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div id="tips" class="info-container">
+    <div class="travel-tips">
+      <img src="Details/rishikesh-Cliffjumping.jpg" alt="Tips Background">
+     <div class="tip-details">
+        <div><strong>👜 Shopping:</strong> Shop for Banarasi silk sarees, wooden toys, perfumes (ittar), and brassware. Best places: Vishwanath Gali, Thatheri Bazaar.</div>
+  <div><strong>🚕 Transport:</strong> Use auto-rickshaws or walk in the narrow lanes. Cycle rickshaws and boats are popular near the ghats. Avoid driving yourself.</div>
+  <div><strong>⚠️ Safety:</strong> Keep belongings secure, beware of pickpockets in crowded areas, and politely decline persistent touts. Drink bottled water only.</div>
+  <div><strong>📅 Best Time:</strong> November–February. Pleasant weather and major festivals like Dev Deepawali make it ideal for visits.</div>
+  <div><strong>🎟️ Entry Tickets:</strong> Temples are mostly free; some cultural shows or museums may charge small fees. Boat rides can vary in price—negotiate or book in advance.</div>
+     </div>
+    </div>
+</div>
+
+<div id="contact" class="info-container">
+  <div class="contact-info">
+    <img src="Contact-Us/contactus1.jfif" alt="Contact">
+    <div class="contact-details">
+      <strong>Contact Info Center</strong>
+      <p>India’s Tourism, MI Road Delhi</p>
+        <p>📞 +91 141 2822863</p>
+        <p>📧 info@indiatourism.gov.in</p>
+        <p>🕘 Mon–Sat, 9:00AM–6:00PM</p>
+    </div>
+  </div>
+</div>
+<!----------------------------------------------------------------------maps------------------------------------------->
+<div class="map-container">
+  <h2>Visit The Rishikesh</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30766738.48171446!2d60.9691763862997!3d19.725163578221917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1748703432187!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<p><a href=" https://maps.google.com" target="_blank">📍 Open in Google Maps</a></p>
+  <!------------------------------------------------------------------- Footer ---------------------------------------------------------------->
+<!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col about">
+        <h3>About Us</h3>
+        <p>
+          Explore india is a simple travel guide to help you discover beautiful place across India. 
+          From historic monuments to scenic landscape, we aim to make your journey more exciting 
+          and informed - no sign-up just exploration.
+        </p>
+      </div>
+      <div class="footer-col links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Destinations.html">Destinations</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col contact">
+        <h3>Get in touch</h3>
+         <p><i class="fas fa-map-marker-alt red-icon"></i> 3rd Floor, MG Road, New Delhi.</p>
+         <p><i class="fas fa-envelope red-icon"></i> info@exploreindia.com</p>
+         <p><i class="fas fa-phone red-icon"></i> +91 98765 43210</p>
+         <p><i class="fab fa-instagram red-icon"></i> Contact@exploreindia</p>
+      </div>
+      <div class="footer-col gallery">
+        <h3>Gallery</h3>
+        <table>
+          <tr>
+            <td colspan="2"><img src="Images/footer1.jpg" alt="Gallery 1" /></td>
+          </tr>
+          <tr>
+            <td><img src="images/footer2.jfif" alt="Gallery 2" /></td>
+            <td><img src="Images/footer3.jfif" alt="Gallery 3" /></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Explore India. All right reserved.</p>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="service.html">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+<script src="rishikesh.js"></script>
+</body>
+</html>

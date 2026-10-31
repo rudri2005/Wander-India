@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Explore India </title>
+    <link rel="stylesheet" href="jaipur.css">
+</head>
+<body>
+<!--------------------------------------------------- Header/Navbar -------------------------------------------------------->
+ <header class="navbar">
+    <div class="container">
+      <div class="logo">Explore India</div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="Destinations.html">Destinations</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="toggle-btn" id="toggle-btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <!-- Dropdown Menu (for mobile) -->
+    <div class="dropdown-menu" id="dropdown-menu">
+      <a href="index.html">Home</a>
+      <a href="Destinations.html">Destinations</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+  <!----------------------------------------------------Hero Section------------------------------------------------------------ -->
+  <section class="hero" id="hero">
+    <div class="overlay"></div>
+    <div class="hero-text">
+      <h1>Jaipur - The Pink City</h1>
+    </div>
+  </section>
+<!------------------------------------------------------------overview of agra--------------------------------------------->
+  <div class="overview-container">
+  <div class="text-section">
+    <h1>The Pink City of India</h1>
+    <p>
+      Jaipur, the capital of Rajasthan and famously known as the “Pink City,” is a vibrant blend of royal heritage, architectural splendor, and cultural richness. Founded in 1727 by Maharaja Sawai Jai Singh II, the city was meticulously planned with the help of architect Vidyadhar Bhattacharya, following the principles of Vastu Shastra and Shilpa Shastra, making it one of India’s first planned cities.
+         Designed to ease the growing population and water scarcity of the nearby Amber town, Jaipur features broad avenues, walled fortifications, and organized sectors. In 1876, the city was painted pink to welcome the Prince of Wales, a tradition that gave Jaipur its famous nickname. Today, Jaipur is a key part of India’s Golden Triangle tourist circuit and a UNESCO World Heritage Site, known for its majestic forts, 
+         palaces, colorful bazaars, and timeless charm that continues to attract visitors from around the world.As part of the Golden Triangle tourist circuit, Jaipur offers an unforgettable experience of India's regal past. 
+    </p>
+  </div>
+  <div class="image-section">
+    <img src="Details/PinkCity.jpg" alt="Agra Architecture" />
+  </div>
+</div>
+
+  <!-------------------------------------------top place to visit in agra----------------------------------------->
+<h2>Top Places to Visit</h2>
+  <div class="carousel-wrapper">
+    <button class="carousel-btn prev-btn">&#8592;</button>
+    <div class="carousel-container">
+      <div class="carousel-track">
+        <div class="carousel-card">
+          <div class="image-wrapper">
+            <img src="Details/hawa-mahal.png" alt="">
+            <div class="overlay"></div>
+          </div>
+          <span>Hawa Mahal</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+            <img src="Details/Amer-Fort.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+          <span>Amer Fort</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+            <img src="Details/amrapali-museum.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+          <span>Amrapali Museum</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+            <img src="Details/city-palace.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+          <span>City Palaces</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+            <img src="Details/jantar-mantar.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+          <span>Jantar Mantar</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+            <img src="Details/PATRIKAGATE.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+          <span>Patrika Gate</span>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-btn next-btn">&#8594;</button>
+  </div>
+  <div class="carousel-dots"></div>
+<!-------------------------------------------------------------facts--------------------------------------------------->
+  <div class="fact-container">
+  <div class="image-box">
+    <img src="Destinations/agra-facts.jfif" alt="Tourist circuit image">
+  </div>
+  <div class="text-box">
+    <h2>Fantastic Facts</h2>
+    <p>
+      Agra also finds itself strategically placed on popular tourist circuits.
+      Explore the Golden Triangle tourist circuit, along with Delhi and Jaipur,
+      or delve deeper into the state’s rich culture through the Uttar Pradesh
+      Heritage Arc, connecting Agra to Lucknow, the state capital, and the holy
+      city of Varanasi.
+    </p>
+  </div>
+</div>
+
+<!--------------------------------------------------informations------------------------------------------------------>
+<h2>Explore Jaipur</h2>
+<div class="tab-bar">
+  <div class="tab active" onclick="showTab('attractions')">Top Attractions</div>
+  <div class="tab" onclick="showTab('food')">Local Food</div>
+  <div class="tab" onclick="showTab('tips')">Travel Tips</div>
+  <div class="tab" onclick="showTab('contact')">Contact</div>
+</div>
+
+<div id="attractions" class="info-container active">
+  <div class="attraction-grid">
+    <div class="card">
+        <img src="Details/hawa-mahal.png" alt="">
+        <div class="card-body">
+          <h4>Hawa Mahal</h4>
+          <p>Iconic five-story palace with a honeycomb façade.
+            <br>Badi Chaupar, Pink City, Jaipur, Rajasthan.
+            <br>9:00 AM – 5:30 PM (Open all days)</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Details/amrapali-museum.jpg" alt="">
+        <div class="card-body">
+          <h4>Amrapali Museum</h4>
+          <p>Unique museum showcasing a rich collection of traditional Indian jewelry, tribal art, and precious objects.
+            <br>Ashok Nagar, Panch Batti, Jaipur, Rajasthan.
+            <br>11:00 AM – 6:30 PM (Closed on Sundays)</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Details/city-palace.jpg" alt="">
+        <div class="card-body">
+          <h4>City Palaces</h4>
+          <p>Majestic royal complex blending Rajput and Mughal architecture.
+            <br>Jaleb Chowk, Pink City, Jaipur, Rajasthan.
+            <br>9:30 AM – 5:00 PM (Open all days)</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Details/jantar-mantar.jpg" alt="">
+        <div class="card-body">
+          <h4>Jantar Mantar</h4>
+          <p> The world’s largest stone sundial and ancient instruments.
+            <br>Near City Palace, Pink City, Jaipur, Rajasthan.
+            <br>9:00 AM – 4:30 PM (Open all days)</p>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div id="food" class="info-container">
+  <div class="food-grid">
+     <div class="card">
+        <img src="Details/flickr_restaurant_278.jpg" alt="">
+        <div class="card-body">
+          <h4>Indian Coffee House</h4>
+          <p>Famous for fast food<br>Near Ajmeri Gate, MI Road, Jaipur </p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Details/lmb.jpg" alt="">
+        <div class="card-body">
+          <h4>LMB</h4>
+          <p>Desserts, Rajasthani<br>100, Johari Bazaar, Pink City, Jaipur, India </p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Details/kanji-sweets.jpg" alt="">
+        <div class="card-body">
+          <h4>Kanji Sweets</h4>
+          <p>Famous for Desserts, Snacks<br> Kesar Mall,Opposite Apex Mall,Tonk Road,Bapu Nagar,Rajasthan</p>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div id="tips" class="info-container">
+ <div class="travel-tips">
+      <img src="Details/PinkCity.jpg" alt="Tips Background">
+      <div class="tip-details">
+  <div><strong>👜 Shopping:</strong> Marble inlay, shoes, crafts. Try Sadar & Kinari Bazaar.</div>
+  <div><strong>🚕 Transport:</strong> Use rickshaws, cabs. From Delhi: Gatimaan Express or car.</div>
+  <div><strong>⚠️ Safety:</strong> Avoid touts, drink bottled water, watch valuables.</div>
+  <div><strong>📅 Best Time:</strong> October–March. Avoid April–June heat.</div>
+  <div><strong>🎟️ Entry Tickets:</strong> Book online for the Taj Mahal to avoid queues. Foreigners may have separate entry lines.</div>
+  <div><strong>📷 Photography:</strong> Allowed at most places, but tripods may be restricted. Taj Mahal prohibits photography inside the main mausoleum.</div>
+</div>
+    </div>
+</div>
+
+<div id="contact" class="info-container">
+  <div class="contact-info">
+    <img src="Contact-Us/contactus1.jfif" alt="Contact">
+    <div class="contact-details">
+      <strong>Contact Info Center</strong>
+      <p>India’s Tourism, MI Road Delhi</p>
+        <p>📞 +91 141 2822863</p>
+        <p>📧 info@indiatourism.gov.in</p>
+        <p>🕘 Mon–Sat, 9:00AM–6:00PM</p>
+    </div>
+  </div>
+</div>
+<!----------------------------------------------------------------------maps------------------------------------------->
+<div class="map-container">
+  <h2>Visit the Jaipur</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30766738.48171446!2d60.9691763862997!3d19.725163578221917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1748703432187!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<p><a href=" https://maps.google.com" target="_blank">📍 Open in Google Maps</a></p>
+  <!------------------------------------------------------------------- Footer ---------------------------------------------------------------->
+<!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col about">
+        <h3>About Us</h3>
+        <p>
+          Explore india is a simple travel guide to help you discover beautiful place across India. 
+          From historic monuments to scenic landscape, we aim to make your journey more exciting 
+          and informed - no sign-up just exploration.
+        </p>
+      </div>
+      <div class="footer-col links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Destinations.html">Destinations</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col contact">
+        <h3>Get in touch</h3>
+         <p><i class="fas fa-map-marker-alt red-icon"></i> 3rd Floor, MG Road, New Delhi.</p>
+         <p><i class="fas fa-envelope red-icon"></i> info@exploreindia.com</p>
+         <p><i class="fas fa-phone red-icon"></i> +91 98765 43210</p>
+         <p><i class="fab fa-instagram red-icon"></i> Contact@exploreindia</p>
+      </div>
+      <div class="footer-col gallery">
+        <h3>Gallery</h3>
+        <table>
+          <tr>
+            <td colspan="2"><img src="Images/footer1.jpg" alt="Gallery 1" /></td>
+          </tr>
+          <tr>
+            <td><img src="images/footer2.jfif" alt="Gallery 2" /></td>
+            <td><img src="Images/footer3.jfif" alt="Gallery 3" /></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Explore India. All right reserved.</p>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="service.html">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+<script src="jaipur.js"></script>
+</body>
+</html>

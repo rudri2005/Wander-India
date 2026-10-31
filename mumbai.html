@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Explore India </title>
+    <link rel="stylesheet" href="mumbai.css">
+</head>
+<body>
+<!--------------------------------------------------- Header/Navbar -------------------------------------------------------->
+ <header class="navbar">
+    <div class="container">
+      <div class="logo">Explore India</div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="Destinations.html">Destinations</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="toggle-btn" id="toggle-btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <!-- Dropdown Menu (for mobile) -->
+    <div class="dropdown-menu" id="dropdown-menu">
+      <a href="index.html">Home</a>
+      <a href="Destinations.html">Destinations</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+  <!----------------------------------------------------Hero Section------------------------------------------------------------ -->
+  <section class="hero" id="hero">
+    <div class="overlay"></div>
+    <div class="hero-text">
+      <h1>Mumbai - City Of Dreams</h1>
+    </div>
+  </section>
+<!------------------------------------------------------------overview of agra--------------------------------------------->
+   <div class="overview-container">
+    <div class="text-section">
+      <h1> The City of Dreams</h1>
+      <p>Mumbai, the financial capital of India, is a fast-paced, vibrant metropolis located on the western coast along the Arabian Sea. Formerly known as Bombay, the city is a melting pot of cultures, dreams, and opportunities. It is home to Bollywood—the heart of India's film industry—as well as major corporate hubs, colonial-era architecture, bustling markets, and a rich street food culture. From the iconic Gateway of India and Marine Drive to the lively local trains and cosmopolitan lifestyle, Mumbai represents both tradition and modernity. Often called the "City That Never Sleeps," it draws people from across the country chasing careers, creativity, and a better life.
+      </p>
+    </div>
+    <div class="image-section">
+      <img src="Details/MUMBAI.jpg" alt=""/>
+    </div>
+  </div>
+  <!-------------------------------------------top place to visit in agra----------------------------------------->
+<h2>Top Places to Visit</h2>
+  <div class="carousel-wrapper">
+    <button class="carousel-btn prev-btn">&#8592;</button>
+    <div class="carousel-container">
+      <div class="carousel-track">
+        <div class="carousel-card">
+          <div class="image-wrapper">
+            <img src="Details/mumbai-bandra-worli-sealink.png" alt="">
+            <div class="overlay"></div>
+          </div>
+          <span>Bandra Worli Sea</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+           <img src="Details/mumbai-marine-drive.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+          <span>Marine Drive</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+            <img src="Details/mumbai-GatewayOfIndia.jfif" alt="">
+            <div class="overlay"></div>
+          </div>
+           <span>Gateway Of India</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+           <img src="Details/mumbai-juhuBeach.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+         <span>Juhu Beach</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+            <img src="Details/mumbai-elephanta-caves.png" alt="">
+            <div class="overlay"></div>
+          </div>
+         <span>Elephanta Caves</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+           <img src="Details/mumbai-kanhariCaves.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+          <span>Kanhari Caves</span>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-btn next-btn">&#8594;</button>
+  </div>
+  <div class="carousel-dots"></div>
+<!-------------------------------------------------------------facts--------------------------------------------------->
+   <div class=" fact-container">
+    <div class="image-box">
+      <img src="Details/mumbai-facts.jpg" alt="Tourist circuit image">
+    </div>
+    <div class="text-box">
+      <h2>Fantastic Facts</h2>
+      <p>Mumbai is home to India’s first and busiest railway station, Chhatrapati Shivaji Maharaj Terminus (CSMT), a UNESCO World Heritage Site known for its stunning Victorian Gothic architecture. It was completed in 1887 and serves over 3 million commuters daily, making it a vital transportation hub. The station's intricate design, combining elements of Indian and European architectural styles, makes it one of the most iconic landmarks in the city. It also holds historical significance, being a symbol of Mumbai's colonial past and its transition into a bustling metropolis.
+      </p>
+    </div>
+  </div> 
+<!--------------------------------------------------informations------------------------------------------------------>
+<h2>Explore Mumbai</h2>
+<div class="tab-bar">
+  <div class="tab active" onclick="showTab('attractions')">Top Attractions</div>
+  <div class="tab" onclick="showTab('food')">Local Food</div>
+  <div class="tab" onclick="showTab('tips')">Travel Tips</div>
+  <div class="tab" onclick="showTab('contact')">Contact</div>
+</div>
+
+<div id="attractions" class="info-container active">
+  <div class="attraction-grid">
+    <div class="card">
+        <img src="Details/mumbai-bandra-worli-sealink.png" alt="">
+        <div class="card-body">
+          <h4>Bandra Worli Sea Link</h4>
+          <p> Iconic cable-stayed bridge connecting Bandra and Worli
+            <br>Connects Bandra to Worli
+            <br>October to February, especially during evenings for beautiful sunset views.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Details/mumbai-juhuBeach.jpg" alt="">
+        <div class="card-body">
+          <h4>Juhu Beach</h4>
+          <p>Popular city beach known for vibrant street food stalls, local vendors, and sunset views
+            <br> Juhu suburb, western Mumbai
+            <br>October to March; evenings are lively and ideal for strolls.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Details/mumbai-marine-drive.jpg" alt="">
+        <div class="card-body">
+          <h4>Marina Drive</h4>
+          <p>Famous “Queen’s Necklace” promenade along the Arabian Sea, perfect for leisurely walks, night views, and the iconic Mumbai skyline.
+            <br>South Mumbai, along the coastline from Nariman Point to Malabar Hill
+            <br>October to February, especially after sunset for the illuminated cityscape.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Details/mumbai-elephanta-caves.png" alt="">
+        <div class="card-body">
+          <h4>Elephanta Caves</h4>
+          <p>Ancient rock-cut Hindu temples dedicated to Lord Shiva, known for intricate carvings and sculptures.
+            <br>Elephanta Island, accessible by ferry from Gateway of India
+            <br>October to March; avoid monsoon months as ferry services may be disrupted.</p>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div id="food" class="info-container">
+  <div class="food-grid">
+     <div class="card">
+        <img src="Details/mumbai-Bun-Maska.jfif" alt="">
+        <div class="card-body">
+          <h4>The Ultimate Mumbai Famous Food</h4>
+          <p>Chhole Bhature - The Best Street Food in Delhi</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Details/mumbai-gurukripa.jpg" alt="">
+        <div class="card-body">
+          <h4> Paranthe Wali Gali</h4>
+          <p>Famous for Bun Maska and Mava Samosa of Mervan’s</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Details/mumbai-Keema_Pao.jfif" alt="">
+        <div class="card-body">
+          <h4>Gulshan-e-Iran</h4>
+          <p>the best food items to try at Gulshan-e-Iran range from their Kheema pav </p>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div id="tips" class="info-container">
+    <div class="travel-tips">
+      <img src="Details/MUMBAI.jpg" alt="Tips Background">
+     <div class="tip-details">
+   <div><strong>👜 Shopping:</strong> Explore local markets like Chandni Chowk, Sarojini Nagar, and Dilli Haat for clothes, spices, handicrafts, and souvenirs.</div>
+  <div><strong>🚕 Transport:</strong> Use the Delhi Metro for fast travel. Auto-rickshaws and cabs are widely available; use apps like Ola or Uber for convenience.</div>
+  <div><strong>⚠️ Safety:</strong> Stay alert in crowded areas, avoid isolated spots at night, and beware of pickpockets. Drink bottled water and check food hygiene.</div>
+  <div><strong>📅 Best Time:</strong> October–March. Pleasant weather for sightseeing. Avoid May–June due to extreme heat.</div>
+</div>
+    </div>
+</div>
+
+<div id="contact" class="info-container">
+  <div class="contact-info">
+    <img src="Contact-Us/contactus1.jfif" alt="Contact">
+    <div class="contact-details">
+      <strong>Contact Info Center</strong>
+      <p>India’s Tourism, MI Road Delhi</p>
+        <p>📞 +91 141 2822863</p>
+        <p>📧 info@indiatourism.gov.in</p>
+        <p>🕘 Mon–Sat, 9:00AM–6:00PM</p>
+    </div>
+  </div>
+</div>
+<!----------------------------------------------------------------------maps------------------------------------------->
+<div class="map-container">
+  <h2>Visit The Mumbai</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30766738.48171446!2d60.9691763862997!3d19.725163578221917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1748703432187!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<p><a href=" https://maps.google.com" target="_blank">📍 Open in Google Maps</a></p>
+  <!------------------------------------------------------------------- Footer ---------------------------------------------------------------->
+<!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col about">
+        <h3>About Us</h3>
+        <p>
+          Explore india is a simple travel guide to help you discover beautiful place across India. 
+          From historic monuments to scenic landscape, we aim to make your journey more exciting 
+          and informed - no sign-up just exploration.
+        </p>
+      </div>
+      <div class="footer-col links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Destinations.html">Destinations</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col contact">
+        <h3>Get in touch</h3>
+         <p><i class="fas fa-map-marker-alt red-icon"></i> 3rd Floor, MG Road, New Delhi.</p>
+         <p><i class="fas fa-envelope red-icon"></i> info@exploreindia.com</p>
+         <p><i class="fas fa-phone red-icon"></i> +91 98765 43210</p>
+         <p><i class="fab fa-instagram red-icon"></i> Contact@exploreindia</p>
+      </div>
+      <div class="footer-col gallery">
+        <h3>Gallery</h3>
+        <table>
+          <tr>
+            <td colspan="2"><img src="Images/footer1.jpg" alt="Gallery 1" /></td>
+          </tr>
+          <tr>
+            <td><img src="images/footer2.jfif" alt="Gallery 2" /></td>
+            <td><img src="Images/footer3.jfif" alt="Gallery 3" /></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Explore India. All right reserved.</p>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="service.html">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+<script src="mumbai.js"></script>
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Explore India </title>
+    <link rel="stylesheet" href="mysore.css">
+</head>
+<body>
+<!--------------------------------------------------- Header/Navbar -------------------------------------------------------->
+ <header class="navbar">
+    <div class="container">
+      <div class="logo">Explore India</div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="Destinations.html">Destinations</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="toggle-btn" id="toggle-btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <!-- Dropdown Menu (for mobile) -->
+    <div class="dropdown-menu" id="dropdown-menu">
+      <a href="index.html">Home</a>
+      <a href="Destinations.html">Destinations</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+  <!----------------------------------------------------Hero Section------------------------------------------------------------ -->
+  <section class="hero" id="hero">
+    <div class="overlay"></div>
+    <div class="hero-text">
+      <h1>Mysore - City Of Palaces</h1>
+    </div>
+  </section>
+<!------------------------------------------------------------overview of agra--------------------------------------------->
+  <div class="overview-container">
+    <div class="text-section">
+      <h1>The Royal City of Palaces</h1>
+      <p>Mysore, located in the southern state of Karnataka, is known for its rich royal heritage, grand architecture, and vibrant cultural traditions. Once the capital of the Kingdom of Mysore, it flourished under the rule of the Wadiyar dynasty. The city is most famous for the majestic Mysore Palace, which blends Hindu, Islamic, and Gothic styles and draws millions of visitors annually. Mysore is also renowned for its Dussehra Festival, a 10-day celebration featuring processions, music, and dance, reflecting the city's deep-rooted cultural pride.
+Apart from its regal past, Mysore is celebrated for its sandalwood products, silk sarees, and as a center for Ashtanga yoga. The city’s peaceful environment, wide roads, and historic charm make it a popular destination for history lovers, spiritual seekers, and art enthusiasts alike.
+    </p>
+    </div>
+    <div class="image-section">
+      <img src="Details/MYSORE.jpg" alt=""/>
+    </div>
+  </div>
+  <!-------------------------------------------top place to visit in agra----------------------------------------->
+<h2>Top Places to Visit</h2>
+  <div class="carousel-wrapper">
+    <button class="carousel-btn prev-btn">&#8592;</button>
+    <div class="carousel-container">
+      <div class="carousel-track">
+        <div class="carousel-card">
+          <div class="image-wrapper">
+          <img src="Details/mysore-palaces.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+            <span>Mysore Palace</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+            <img src="Details/mysore-karanjiLake.jfif" alt="">
+            <div class="overlay"></div>
+          </div>
+            <span>Karanji lake</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+             <img src="Details/mysore-KuntiBetta.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+             <span>Kunti Betta</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+          <img src="Details/mysore-Chunchanakatte_Falls.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+            <span>Chunchanakatte Falls</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+             <img src="Details/mysore-railMuseum.png" alt="">
+            <div class="overlay"></div>
+          </div>
+          <span>rail Museum</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+          <img src="Details/mysore-SomnathpurTemple.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+           <span>Somnathpur Temple</span>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-btn next-btn">&#8594;</button>
+  </div>
+  <div class="carousel-dots"></div>
+<!-------------------------------------------------------------facts--------------------------------------------------->
+    <div class=" fact-container">
+    <div class="image-box">
+      <img src="Details/mysore-facts.jpg" alt="Tourist circuit image">
+    </div>
+    <div class="text-box">
+      <h2>Fantastic Facts</h2>
+      <p>Mysore is home to the second most visited palace in India—the Mysore Palace, attracting over 3 million tourists every year. During the grand Dasara (Dussehra) festival, the palace is illuminated with around 100,000 bulbs, transforming it into a glowing symbol of royal heritage. This 10-day celebration honors the victory of good over evil and features processions, cultural performances, and traditional music, drawing visitors from across the globe. The palace's blend of Indo-Saracenic architecture, vibrant frescoes, and rich history makes it a true icon of Karnataka’s cultural pride.
+      </p>
+    </div>
+  </div>
+<!--------------------------------------------------informations------------------------------------------------------>
+<h2>Explore Mysore</h2>
+<div class="tab-bar">
+  <div class="tab active" onclick="showTab('attractions')">Top Attractions</div>
+  <div class="tab" onclick="showTab('food')">Local Food</div>
+  <div class="tab" onclick="showTab('tips')">Travel Tips</div>
+  <div class="tab" onclick="showTab('contact')">Contact</div>
+</div>
+
+<div id="attractions" class="info-container active">
+  <div class="attraction-grid">
+     <div class="card">
+        <img src="Details/mysore-palaces.jpg" alt="">
+        <div class="card-body">
+          <h4>mysore-palaces</h4>
+          <p>Grand Indo-Saracenic royal palace known for its opulent halls, stained glass, and rich royal history. Illuminated during Dasara with 100,000 lights.
+            <br>Heart of Mysore city
+            <br>October to March especially during the Dasara festival. </p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Details/mysore-Chunchanakatte_Falls.jpg" alt="">
+        <div class="card-body">
+          <h4>Chunchanakatte_Falls</h4>
+          <p>Scenic waterfall on the Kaveri River, known for its wide flow, natural beauty, and a temple dedicated to Lord Rama.
+            <br> Around 55 km from Mysore, near KR Nagar
+            <br>July to October – during and after monsoon for full water flow.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Details/mysore-karanjiLake.jfif" alt="">
+        <div class="card-body">
+          <h4>karanjiLake</h4>
+          <p>A peaceful lake and nature park ideal for bird watching, boating, and relaxation. Home to a butterfly park and aviary.
+            <br>Near Mysore Zoo, Chamundi Hills road
+            <br>October to  February</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Details/mysore-KuntiBetta.jpg" alt="">
+        <div class="card-body">
+          <h4>KuntiBetta</h4>
+          <p>Twin rocky hills great for trekking and adventure, with mythological significance linked to the Pandavas. Offers sunrise views and night treks.
+            <br>Near Pandavapura, about 33 km from Mysore
+            <br>October to March – cooler climate for trekking.</p>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div id="food" class="info-container">
+  <div class="food-grid">
+     <div class="card">
+        <img src="Details/mysore-sapphire.jfif" alt="">
+        <div class="card-body">
+          <h4>Sapphire</h4>
+          <p>Famous for iddli-sandhar</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Details/mysore-tigerTrail.jpg" alt="">
+        <div class="card-body">
+          <h4>Tiger Trail</h4>
+          <p>North Indian, Chinese</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Details/mysore-vinayaka-mylari.jfif" alt="">
+        <div class="card-body">
+          <h4>Vinayaka Mylari</h4>
+          <p>Famous For South Indian dish.</p>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div id="tips" class="info-container">
+    <div class="travel-tips">
+      <img src="Details/mysore-Chunchanakatte_Falls.jpg" alt="Tips Background">
+     <div class="tip-details">
+        <div><strong>👜 Shopping:</strong> Shop for Banarasi silk sarees, wooden toys, perfumes (ittar), and brassware. Best places: Vishwanath Gali, Thatheri Bazaar.</div>
+  <div><strong>🚕 Transport:</strong> Use auto-rickshaws or walk in the narrow lanes. Cycle rickshaws and boats are popular near the ghats. Avoid driving yourself.</div>
+  <div><strong>⚠️ Safety:</strong> Keep belongings secure, beware of pickpockets in crowded areas, and politely decline persistent touts. Drink bottled water only.</div>
+  <div><strong>📅 Best Time:</strong> November–February. Pleasant weather and major festivals like Dev Deepawali make it ideal for visits.</div>
+  <div><strong>🎟️ Entry Tickets:</strong> Temples are mostly free; some cultural shows or museums may charge small fees. Boat rides can vary in price—negotiate or book in advance.</div>
+     </div>
+    </div>
+</div>
+
+<div id="contact" class="info-container">
+  <div class="contact-info">
+    <img src="Contact-Us/contactus1.jfif" alt="Contact">
+    <div class="contact-details">
+      <strong>Contact Info Center</strong>
+      <p>India’s Tourism, MI Road Delhi</p>
+        <p>📞 +91 141 2822863</p>
+        <p>📧 info@indiatourism.gov.in</p>
+        <p>🕘 Mon–Sat, 9:00AM–6:00PM</p>
+    </div>
+  </div>
+</div>
+<!----------------------------------------------------------------------maps------------------------------------------->
+<div class="map-container">
+  <h2>Visit The Mysore</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30766738.48171446!2d60.9691763862997!3d19.725163578221917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1748703432187!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<p><a href=" https://maps.google.com" target="_blank">📍 Open in Google Maps</a></p>
+  <!------------------------------------------------------------------- Footer ---------------------------------------------------------------->
+<!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col about">
+        <h3>About Us</h3>
+        <p>
+          Explore india is a simple travel guide to help you discover beautiful place across India. 
+          From historic monuments to scenic landscape, we aim to make your journey more exciting 
+          and informed - no sign-up just exploration.
+        </p>
+      </div>
+      <div class="footer-col links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Destinations.html">Destinations</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col contact">
+        <h3>Get in touch</h3>
+         <p><i class="fas fa-map-marker-alt red-icon"></i> 3rd Floor, MG Road, New Delhi.</p>
+         <p><i class="fas fa-envelope red-icon"></i> info@exploreindia.com</p>
+         <p><i class="fas fa-phone red-icon"></i> +91 98765 43210</p>
+         <p><i class="fab fa-instagram red-icon"></i> Contact@exploreindia</p>
+      </div>
+      <div class="footer-col gallery">
+        <h3>Gallery</h3>
+        <table>
+          <tr>
+            <td colspan="2"><img src="Images/footer1.jpg" alt="Gallery 1" /></td>
+          </tr>
+          <tr>
+            <td><img src="images/footer2.jfif" alt="Gallery 2" /></td>
+            <td><img src="Images/footer3.jfif" alt="Gallery 3" /></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Explore India. All right reserved.</p>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="service.html">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+<script src="mysore.js"></script>
+</body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Explore India </title>
+    <link rel="stylesheet" href="hampi.css">
+</head>
+<body>
+<!--------------------------------------------------- Header/Navbar -------------------------------------------------------->
+ <header class="navbar">
+    <div class="container">
+      <div class="logo">Explore India</div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="Destinations.html">Destinations</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="toggle-btn" id="toggle-btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <!-- Dropdown Menu (for mobile) -->
+    <div class="dropdown-menu" id="dropdown-menu">
+      <a href="index.html">Home</a>
+      <a href="Destinations.html">Destinations</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+  <!----------------------------------------------------Hero Section------------------------------------------------------------ -->
+  <section class="hero" id="hero">
+    <div class="overlay"></div>
+    <div class="hero-text">
+       <h1>Hampi - Ancient Ruins & Temples</h1>
+    </div>
+  </section>
+<!------------------------------------------------------------overview of agra--------------------------------------------->
+  <div class="overview-container">
+    <div class="text-section">
+      <h1>The Lost City of Ancient Wonders</h1>
+      <p>Hampi, situated in the Indian state of Karnataka, is one of the most extraordinary heritage sites in the world. Once the flourishing capital of the Vijayanagara Empire in the 14th to 16th centuries, Hampi was among the richest cities in the world, attracting traders from Persia, Portugal, and Arabia. The city fell to invaders in 1565, but its majestic ruins still echo the splendor of its past.
+Today, Hampi is recognized as a UNESCO World Heritage Site, drawing visitors for its mythological significance, temple architecture, and surreal landscape dotted with boulders. Key attractions include the Virupaksha Temple, which is still active; the Vittala Temple, known for its stone chariot and musical pillars; Lotus Mahal, Queen’s Bath, and the Royal Enclosure.
+Hampi also holds great religious importance in Hindu mythology, believed to be part of the Kishkindha region mentioned in the Ramayana. The scenic Tungabhadra River, vibrant bazaars, and panoramic viewpoints like Matanga Hill add to its allure. Whether you're a history lover, spiritual seeker, or adventure traveler, Hampi offers a magical journey back in time amidst a dreamlike landscape.
+    </p>
+    </div>
+    <div class="image-section">
+      <img src="Details/hampi.jpg" alt=""/>
+    </div>
+</div>
+  <!-------------------------------------------top place to visit in agra----------------------------------------->
+<h2>Top Places to Visit</h2>
+  <div class="carousel-wrapper">
+    <button class="carousel-btn prev-btn">&#8592;</button>
+    <div class="carousel-container">
+      <div class="carousel-track">
+        <div class="carousel-card">
+          <div class="image-wrapper">
+          <img src="Details/hampi-hamppieIsland.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+          <span>Hamppie Island</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+             <img src="Details/hampi-lotusPalace.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+            <span>Lotus Palace</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+              <img src="Details/hampi-matangaHill.jfif" alt="">
+            <div class="overlay"></div>
+          </div>
+             <span>Matanga Hill</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+          <img src="Details/hampi-shivlinga.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+           <span>Shivlinga</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+            <img src="Details/hampi-vithalaTemple.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+           <span>Vithala Temple</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+           <img src="Details/hampi-rockClimbing.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+           <span>Rock Climbing</span>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-btn next-btn">&#8594;</button>
+  </div>
+  <div class="carousel-dots"></div>
+<!-------------------------------------------------------------facts--------------------------------------------------->
+   <div class=" fact-container">
+    <div class="image-box">
+      <img src="Details/hampi-vithalaTemple.jpg" alt="Tourist circuit image">
+    </div>
+    <div class="text-box">
+      <h2>Fantastic Facts</h2>
+      <p>One fascinating fact about Hampi is that the Vittala Temple’s musical pillars are an architectural marvel that continues to intrigue historians and visitors alike. These stone pillars, often called “Saregama pillars,” produce musical notes when gently tapped. Each of the main pillars is surrounded by smaller carved pillars that emit different sounds resembling musical instruments like drums and bells. What’s even more impressive is that this acoustic feature was crafted from solid granite, and no modern technology was used. This shows the advanced engineering and artistic skills of the Vijayanagara craftsmen in the 15th century. Although tapping the pillars is now restricted to preserve them, the structure stands as a symbol of India’s rich cultural and scientific heritage.
+      </p>
+    </div>
+  </div>
+<!--------------------------------------------------informations------------------------------------------------------>
+<h2>Explore Hampi</h2>
+<div class="tab-bar">
+  <div class="tab active" onclick="showTab('attractions')">Top Attractions</div>
+  <div class="tab" onclick="showTab('food')">Local Food</div>
+  <div class="tab" onclick="showTab('tips')">Travel Tips</div>
+  <div class="tab" onclick="showTab('contact')">Contact</div>
+</div>
+
+<div id="attractions" class="info-container active">
+  <div class="attraction-grid">
+    <div class="card">
+        <img src="Details/hampi-hamppieIsland.jpg" alt="">
+        <div class="card-body">
+          <h4>Hamppie Island</h4>
+          <p>Known for its laid-back vibe, riverside cafes, and backpacker culture. A perfect spot for relaxation, music, and scenic views.
+            <br>Across the Tungabhadra River from the Hampi ruins.
+            <br> October to February </p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Details/hampi-lotusPalace.jpg" alt="">
+        <div class="card-body">
+          <h4>Lotus Palace</h4>
+          <p>An Indo-Islamic architectural gem with lotus-shaped domes, once used as a royal retreat for queens.
+            <br> Zenana Enclosure, Hampi.
+            <br> October to March</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Details/hampi-matangaHill.jfif" alt="">
+        <div class="card-body">
+          <h4>Matanaga Hill</h4>
+          <p>The highest point in Hampi, offering panoramic views and stunning sunrises/sunsets over the ruins and river.
+            <br> Near Hampi Bazaar, central Hampi.
+            <br>Sunrise or sunset during October to February for the best visibility and experience.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Details/hampi-vithalaTemple.jpg" alt="">
+        <div class="card-body">
+          <h4>Vithala Temple</h4>
+          <p>Famous for its iconic stone chariot and musical pillars, showcasing the architectural brilliance of the Vijayanagara Empire.
+            <br> Eastern Hampi, about 2 km from Hampi Bazaar
+            <br> October to February</p>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div id="food" class="info-container">
+  <div class="food-grid">
+     <div class="card">
+        <img src="Details/hampi-bisi-bele-bath.jfif" alt="">
+        <div class="card-body">
+          <h4>Bisi bele bath</h4>
+          <p>The traditional preparation of this dish is quite elaborate and involves the use of a spicy masala (huliyanna), toor dal (a type of lentil), rice, ghee and vegetables.[5] Spices like nutmeg, asafoetida, curry leaves and tamarind pulp contribute to its unique flavour and taste</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Details/hampi-ravaIdli.jfif" alt="">
+        <div class="card-body">
+          <h4>Rava Idli</h4>
+          <p>Rava idli, a variation of the popular South Indian idli made with semolina, is a well-known and popular food in Hampi.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Details/hampi- crispy lentil-flour snack.jfif" alt="">
+        <div class="card-body">
+          <h4>crispy lentil-flour snack</h4>
+          <p>One of the popular local snacks you can enjoy in Hampi is the “Nippattu”, a crispy and spicy lentil-flour-based cracker.</p>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div id="tips" class="info-container">
+    <div class="travel-tips">
+      <img src="Details/hampi-rockClimbing.jpg" alt="Tips Background">
+     <div class="tip-details">
+        <div><strong>👜 Shopping:</strong> Buy banana fiber crafts, stone carvings, and Lambani embroidery from Hampi Bazaar and local markets.</div>
+  <div><strong>🚕 Transport:</strong> Nearest railway station is Hospet (13 km). Rent bicycles, mopeds, or use auto-rickshaws to explore ruins.</div>
+  <div><strong>⚠️ Safety:</strong> Wear sturdy shoes for rocky terrain. Stay hydrated and avoid isolated areas after dark.</div>
+  <div><strong>📅 Best Time:</strong> October to February – pleasant weather for sightseeing and photography.</div>
+  <div><strong>🎟️ Entry Tickets:</strong> Entry fees apply at sites like Vittala Temple and Royal Enclosure. Combo tickets are available.</div>
+     <div><strong>📷 Photography:</strong> Allowed at most sites. Sunrise and sunset are ideal times for scenic shots.</div>
+</div>
+    </div>
+</div>
+
+<div id="contact" class="info-container">
+  <div class="contact-info">
+    <img src="Contact-Us/contactus1.jfif" alt="Contact">
+    <div class="contact-details">
+      <strong>Contact Info Center</strong>
+      <p>India’s Tourism, MI Road Delhi</p>
+        <p>📞 +91 141 2822863</p>
+        <p>📧 info@indiatourism.gov.in</p>
+        <p>🕘 Mon–Sat, 9:00AM–6:00PM</p>
+    </div>
+  </div>
+</div>
+<!----------------------------------------------------------------------maps------------------------------------------->
+<div class="map-container">
+  <h2>Visit The Hampi</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30766738.48171446!2d60.9691763862997!3d19.725163578221917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1748703432187!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<p><a href=" https://maps.google.com" target="_blank">📍 Open in Google Maps</a></p>
+  <!------------------------------------------------------------------- Footer ---------------------------------------------------------------->
+<!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col about">
+        <h3>About Us</h3>
+        <p>
+          Explore india is a simple travel guide to help you discover beautiful place across India. 
+          From historic monuments to scenic landscape, we aim to make your journey more exciting 
+          and informed - no sign-up just exploration.
+        </p>
+      </div>
+      <div class="footer-col links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Destinations.html">Destinations</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col contact">
+        <h3>Get in touch</h3>
+         <p><i class="fas fa-map-marker-alt red-icon"></i> 3rd Floor, MG Road, New Delhi.</p>
+         <p><i class="fas fa-envelope red-icon"></i> info@exploreindia.com</p>
+         <p><i class="fas fa-phone red-icon"></i> +91 98765 43210</p>
+         <p><i class="fab fa-instagram red-icon"></i> Contact@exploreindia</p>
+      </div>
+      <div class="footer-col gallery">
+        <h3>Gallery</h3>
+        <table>
+          <tr>
+            <td colspan="2"><img src="Images/footer1.jpg" alt="Gallery 1" /></td>
+          </tr>
+          <tr>
+            <td><img src="images/footer2.jfif" alt="Gallery 2" /></td>
+            <td><img src="Images/footer3.jfif" alt="Gallery 3" /></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Explore India. All right reserved.</p>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="service.html">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+<script src="hampi.js"></script>
+</body>
+</html>

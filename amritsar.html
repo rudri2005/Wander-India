@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Explore India </title>
+    <link rel="stylesheet" href="amritsar.css">
+</head>
+<body>
+<!--------------------------------------------------- Header/Navbar -------------------------------------------------------->
+ <header class="navbar">
+    <div class="container">
+      <div class="logo">Explore India</div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="Destinations.html">Destinations</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="toggle-btn" id="toggle-btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <!-- Dropdown Menu (for mobile) -->
+    <div class="dropdown-menu" id="dropdown-menu">
+      <a href="index.html">Home</a>
+      <a href="Destinations.html">Destinations</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+  <!----------------------------------------------------Hero Section------------------------------------------------------------ -->
+  <section class="hero" id="hero">
+    <div class="overlay"></div>
+    <div class="hero-text">
+      <h1>Amritsar - Home Of The Golden Temple</h1>
+    </div>
+  </section>
+<!------------------------------------------------------------overview of agra--------------------------------------------->
+   <div class="overview-container">
+    <div class="text-section">
+      <h1>The Spiritual Heart of Punjab</h1>
+      <p>Amritsar, founded in 1577 by Guru Ram Das, the fourth Sikh Guru, is a city deeply rooted in faith, culture, and resilience. It is best known for the Golden Temple (Sri Harmandir Sahib), a magnificent spiritual site built in the 16th century, symbolizing universal brotherhood and equality. The temple’s gold-plated architecture and serene Amrit Sarovar (holy tank) offer peace to all who visit, regardless of religion or background. The city’s name itself is derived from this sacred pool—"Amrit Sarovar", meaning “pool of nectar.”
+Historically, Amritsar has witnessed pivotal events in India's past, including the Jallianwala Bagh massacre in 1919, a turning point in the freedom movement. The city also lies near the Wagah Border, where the daily Beating Retreat ceremony reflects both pride and patriotism. Today, Amritsar is not just a pilgrimage destination but also a cultural hub, known for its bustling old bazaars, rich Punjabi cuisine like Amritsari kulcha and lassi, and warm hospitality.
+    </p>
+    </div>
+    <div class="image-section">
+      <img src="Details/amritsar.jpg" alt=""/>
+    </div>
+  </div>
+  <!-------------------------------------------top place to visit in agra----------------------------------------->
+<h2>Top Places to Visit</h2>
+  <div class="carousel-wrapper">
+    <button class="carousel-btn prev-btn">&#8592;</button>
+    <div class="carousel-container">
+      <div class="carousel-track">
+        <div class="carousel-card">
+          <div class="image-wrapper">
+           <img src="Details/amritsar-goldenTemple.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+           <span>Golden Temple</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+              <img src="Details/amritsar-guruKeMahal.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+           <span>Guru Ke Mahal</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+             <img src="Details/amritsar-GobindgarhFort.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+             <span>Gobindgarh Fort</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+           <img src="Details/amritsar-jallianwalaBagh.png" alt="">
+            <div class="overlay"></div>
+          </div>
+             <span>Jallianwala Bagh</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+             <img src="Details/amritsar-partitionMuseum.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+         <span>Partition Museum</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+          <img src="Details/amritsar-shriramTirth-temple.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+           <span>Shri Ram Tirth Temple</span>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-btn next-btn">&#8594;</button>
+  </div>
+  <div class="carousel-dots"></div>
+<!-------------------------------------------------------------facts--------------------------------------------------->
+   <div class=" fact-container">
+    <div class="image-box">
+      <img src="Details/amritsar-jallianwalaBagh.png" alt="Tourist circuit image">
+    </div>
+    <div class="text-box">
+      <h2>Fantastic Facts</h2>
+      <p>Amritsar is not only famous for the Golden Temple but also holds great historical and cultural importance as the center of Sikh heritage and resilience. One remarkable fact is that the city houses the historic Jallianwala Bagh, where on April 13, 1919, British troops opened fire on thousands of unarmed Indian civilians gathered for a peaceful protest. This tragic event became a turning point in India’s struggle for independence and is memorialized today with a museum and eternal flame inside the garden. The bullet marks on the walls and the preserved well where people jumped to escape the firing serve as powerful reminders of the sacrifices made for freedom.
+      </p>
+    </div>
+  </div>
+<!--------------------------------------------------informations------------------------------------------------------>
+<h2>Explore Amritsar</h2>
+<div class="tab-bar">
+  <div class="tab active" onclick="showTab('attractions')">Top Attractions</div>
+  <div class="tab" onclick="showTab('food')">Local Food</div>
+  <div class="tab" onclick="showTab('tips')">Travel Tips</div>
+  <div class="tab" onclick="showTab('contact')">Contact</div>
+</div>
+
+<div id="attractions" class="info-container active">
+  <div class="attraction-grid">
+    <div class="card">
+        <img src="Details/amritsar-goldenTemple.jpg" alt="">
+        <div class="card-body">
+          <h4>Golden Temple</h4>
+          <p> Holiest shrine of Sikhism, known for its gold-plated structure, peaceful Sarovar, and the world’s largest free community kitchen.
+            <br> Amritsar city center
+            <br>October to March </p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Details/amritsar-GobindgarhFort.jpg" alt="">
+        <div class="card-body">
+          <h4>Gobindgarh Fort</h4>
+          <p>Historic 18th-century fort once controlled by Maharaja Ranjit Singh; now a cultural complex with museums, light & sound shows, and traditional performances.
+            <br>Old Cantt Road, Amritsar
+            <br>October to February </p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Details/amritsar-guruKeMahal.jpg" alt="">
+        <div class="card-body">
+          <h4>Guru Ka Mahal</h4>
+          <p>A modest yet sacred site where Guru Ram Das and Guru Arjan Dev lived. Known for its historical value and peaceful atmosphere.
+            <br> Near Golden Temple, inside Guru Bazaar
+            <br>October to March </p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Details/amritsar-partitionMuseum.jpg" alt="">
+        <div class="card-body">
+          <h4>Paritition Museum</h4>
+          <p>India’s first museum dedicated to the Partition of 1947, showcasing personal stories, documents, and exhibits on one of the most impactful events in Indian history.
+            <br>Town Hall, near Golden Temple
+            <br>Year-round, but October to March is most comfortable for walking tours in the area.</p>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div id="food" class="info-container">
+  <div class="food-grid">
+     <div class="card">
+        <img src="Details/amritsar-Ahuja-Lassi.jpg" alt="">
+        <div class="card-body">
+          <h4>Ahuja Milk Bhandar</h4>
+          <p>Spending a day in Amritsar, you cannot imagine going without at least one glass of lassi.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Details/amritsar-kulchas.jpg" alt="">
+        <div class="card-body">
+          <h4>All India Famous Amritsari Kulcha</h4>
+          <p>Amritsar is synonymous with Kulchas, the maida bread baked in a tandoor.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Details/amritsar-Langar-ka-Prasad.jpg" alt="">
+        <div class="card-body">
+          <h4>Golden Temple-Langar Ka Prasad</h4>
+          <p>Langar Ka Prasad also known as Kara Prasad in Golden Temple is very famous in Panjab</p>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div id="tips" class="info-container">
+    <div class="travel-tips">
+      <img src="Details/amritsar.jpg" alt="Tips Background">
+     <div class="tip-details">
+        <div><strong>👜 Shopping:</strong> Shop for Banarasi silk sarees, wooden toys, perfumes (ittar), and brassware. Best places: Vishwanath Gali, Thatheri Bazaar.</div>
+  <div><strong>🚕 Transport:</strong> Use auto-rickshaws or walk in the narrow lanes. Cycle rickshaws and boats are popular near the ghats. Avoid driving yourself.</div>
+  <div><strong>⚠️ Safety:</strong> Keep belongings secure, beware of pickpockets in crowded areas, and politely decline persistent touts. Drink bottled water only.</div>
+  <div><strong>📅 Best Time:</strong> November–February. Pleasant weather and major festivals like Dev Deepawali make it ideal for visits.</div>
+  <div><strong>🎟️ Entry Tickets:</strong> Temples are mostly free; some cultural shows or museums may charge small fees. Boat rides can vary in price—negotiate or book in advance.</div>
+     </div>
+    </div>
+</div>
+
+<div id="contact" class="info-container">
+  <div class="contact-info">
+    <img src="Contact-Us/contactus1.jfif" alt="Contact">
+    <div class="contact-details">
+      <strong>Contact Info Center</strong>
+      <p>India’s Tourism, MI Road Delhi</p>
+        <p>📞 +91 141 2822863</p>
+        <p>📧 info@indiatourism.gov.in</p>
+        <p>🕘 Mon–Sat, 9:00AM–6:00PM</p>
+    </div>
+  </div>
+</div>
+<!----------------------------------------------------------------------maps------------------------------------------->
+<div class="map-container">
+  <h2>Visit The Amritsar</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30766738.48171446!2d60.9691763862997!3d19.725163578221917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1748703432187!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<p><a href=" https://maps.google.com" target="_blank">📍 Open in Google Maps</a></p>
+  <!------------------------------------------------------------------- Footer ---------------------------------------------------------------->
+<!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col about">
+        <h3>About Us</h3>
+        <p>
+          Explore india is a simple travel guide to help you discover beautiful place across India. 
+          From historic monuments to scenic landscape, we aim to make your journey more exciting 
+          and informed - no sign-up just exploration.
+        </p>
+      </div>
+      <div class="footer-col links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Destinations.html">Destinations</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col contact">
+        <h3>Get in touch</h3>
+         <p><i class="fas fa-map-marker-alt red-icon"></i> 3rd Floor, MG Road, New Delhi.</p>
+         <p><i class="fas fa-envelope red-icon"></i> info@exploreindia.com</p>
+         <p><i class="fas fa-phone red-icon"></i> +91 98765 43210</p>
+         <p><i class="fab fa-instagram red-icon"></i> Contact@exploreindia</p>
+      </div>
+      <div class="footer-col gallery">
+        <h3>Gallery</h3>
+        <table>
+          <tr>
+            <td colspan="2"><img src="Images/footer1.jpg" alt="Gallery 1" /></td>
+          </tr>
+          <tr>
+            <td><img src="images/footer2.jfif" alt="Gallery 2" /></td>
+            <td><img src="Images/footer3.jfif" alt="Gallery 3" /></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Explore India. All right reserved.</p>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="service.html">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+<script src="amritsar.js"></script>
+</body>
+</html>

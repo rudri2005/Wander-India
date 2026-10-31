@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Explore India </title>
+    <link rel="stylesheet" href="darjeeling.css">
+</head>
+<body>
+<!--------------------------------------------------- Header/Navbar -------------------------------------------------------->
+ <header class="navbar">
+    <div class="container">
+      <div class="logo">Explore India</div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="Destinations.html">Destinations</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="toggle-btn" id="toggle-btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <!-- Dropdown Menu (for mobile) -->
+    <div class="dropdown-menu" id="dropdown-menu">
+      <a href="index.html">Home</a>
+      <a href="Destinations.html">Destinations</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+   <!----------------------------------------------------Hero Section------------------------------------------------------------ -->
+  <section class="hero" id="hero">
+    <div class="overlay"></div>
+    <div class="hero-text">
+      <h1>Darjeeling - Queen’s Of The Hills</h1>
+    </div>
+  </section>
+<!------------------------------------------------------------overview of agra--------------------------------------------->
+   <div class="overview-container">
+    <div class="text-section">
+      <h1>The Queen of the Hills</h1>
+      <p>Nestled in the eastern Himalayas of West Bengal, Darjeeling is a charming hill station renowned for its lush tea gardens, panoramic views of the Kanchenjunga, and colonial charm. Established during British rule as a summer retreat, Darjeeling blends British-era architecture with Tibetan, Nepali, and Bengali influences, creating a unique cultural mix.
+The Darjeeling Himalayan Railway, a UNESCO World Heritage Site, adds old-world charm with its toy train chugging through hills and tea estates. Visitors come for the crisp mountain air, stunning sunrises from Tiger Hill, vibrant bazaars, Buddhist monasteries, and, of course, a hot cup of world-famous Darjeeling tea.
+Adventure seekers can enjoy trekking, paragliding, and exploring scenic trails, while cultural enthusiasts can attend local festivals and visit heritage museums.
+    </p>
+    </div>
+    <div class="image-section">
+      <img src="Details/DARJEELING.jpg" alt=""/>
+    </div>
+</div>
+  <!-------------------------------------------top place to visit in agra----------------------------------------->
+<h2>Top Places to Visit</h2>
+  <div class="carousel-wrapper">
+    <button class="carousel-btn prev-btn">&#8592;</button>
+    <div class="carousel-container">
+      <div class="carousel-track">
+        <div class="carousel-card">
+          <div class="image-wrapper">
+           <img src="Details/dargeeling-tigerHill.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+           <span>Tiger Hill</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+              <img src="Details/darjeeling-barboteyRockGarden.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+           <span>Barbotey Rock Waterfall</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+               <img src="Details/darjeeling-batasiaLoop.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+             <span>Batasia Loop</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+          <img src="Details/darjeeling-suntalekhola.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+           <span>Suntalekhola</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+            <img src="Details/Darjeeling-himalayanRailway.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+           <span>Himalayan Railway</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+            <img src="Details/Darjeeling-tea-plantation.jpg" alt="">
+            <div class="overlay"></div>
+          </div>
+          <span>Tea Plantation</span>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-btn next-btn">&#8594;</button>
+  </div>
+  <div class="carousel-dots"></div>
+<!-------------------------------------------------------------facts--------------------------------------------------->
+  <div class=" fact-container">
+    <div class="image-box">
+      <img src="Details/Darjeeling-himalayanRailway.jpg" alt="Tourist circuit image">
+    </div>
+    <div class="text-box">
+      <h2>Fantastic Facts</h2>
+      <p>Darjeeling is home to the Darjeeling Himalayan Railway (DHR), affectionately known as the "Toy Train", which was completed in 1881 and is now a UNESCO World Heritage Site. This narrow-gauge railway runs from New Jalpaiguri to Darjeeling, navigating steep hills and sharp curves with the help of unique engineering techniques like looping tracks and zigzags. The Toy Train not only offers stunning views of the mountains and tea estates but is also considered an engineering marvel from the colonial era.
+      </p>
+    </div>
+  </div>
+<!--------------------------------------------------informations------------------------------------------------------>
+<h2>Explore Darjeeling</h2>
+<div class="tab-bar">
+  <div class="tab active" onclick="showTab('attractions')">Top Attractions</div>
+  <div class="tab" onclick="showTab('food')">Local Food</div>
+  <div class="tab" onclick="showTab('tips')">Travel Tips</div>
+  <div class="tab" onclick="showTab('contact')">Contact</div>
+</div>
+
+<div id="attractions" class="info-container active">
+  <div class="attraction-grid">
+    <div class="card">
+        <img src="Details/darjeeling-barboteyRockGarden.jpg" alt="">
+        <div class="card-body">
+          <h4>Barbotey Rock Waterfall</h4>
+          <p> A beautifully terraced garden built around a natural waterfall with scenic seating and picnic spots.
+            <br>About 10 km from Darjeeling town.
+            <br>March to June and September to November – lush greenery and pleasant weather.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Details/darjeeling-batasiaLoop.jpg" alt="">
+        <div class="card-body">
+          <h4>Batasia Loop</h4>
+          <p>A spiral railway loop offering stunning views of the Darjeeling hills and the Kanchenjunga range; features a war memorial.
+            <br>5 km from Darjeeling, on the way to Ghoom.
+            <br>: October to December – clear skies for panoramic mountain views.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Details/dargeeling-tigerHill.jpg" alt="">
+        <div class="card-body">
+          <h4>Tiger Hill</h4>
+          <p>Famous for sunrise views over Mount Kanchenjunga and even Mount Everest on clear days.
+            <br>11 km from Darjeeling town.
+            <br>October to February – best for cloudless, dramatic sunrises.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Details/darjeeling-suntalekhola.jpg" alt="">
+        <div class="card-body">
+          <h4>Suntalekhola</h4>
+          <p>A serene forest village ideal for birdwatching, riverside picnics, and nature stays in the Dooars region.
+            <br> In Kalimpong district, around 80 km from Darjeeling.
+            <br> October to April – cool, dry weather ideal for eco-tourism.</p>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div id="food" class="info-container">
+  <div class="food-grid">
+      <div class="card">
+        <img src="Details/darjeeling-Traditional Nepali Thali.jpg" alt="">
+        <div class="card-body">
+          <h4>Traditional Nepali Thali</h4>
+          <p>The traditional Nepali Thali is an excellent combination of our daily lifestyle food, which retains its originality and delivers the customers some fantastic and delicious food.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Details/darjeeling-tea.webp" alt="">
+        <div class="card-body">
+          <h4>Darjeeling Tea</h4>
+          <p>Darjeeling’s special tea is a must</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Details/darjeeling-Sel_Roti.jpg" alt="">
+        <div class="card-body">
+          <h4>Sael-Rotis</h4>
+          <p>Sael Roti is another one of the Nepal speciality and is a delicacy during special occasions at home. </p>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div id="tips" class="info-container">
+    <div class="travel-tips">
+      <img src="Destinations/darjeeling.jpg" alt="Tips Background">
+     <div class="tip-details">
+        <div><strong>👜 Shopping:</strong> Buy Darjeeling tea, handwoven woolens, traditional handicrafts, and Buddhist artifacts at Chowrasta and Mall Road markets.</div>
+  <div><strong>🚕 Transport:</strong> Use shared jeeps, taxis, or rent scooters for local travel. Toy Train rides are a must for scenic hill views.</div>
+  <div><strong>⚠️ Safety:</strong> Dress in layers as temperatures vary. Avoid drinking tap water; carry bottled water. Be cautious of slippery paths during monsoon.</div>
+  <div><strong>📅 Best Time:</strong> March to June and September to November for clear skies and pleasant weather.</div>
+  <div><strong>🎟️ Entry Tickets:</strong> Some monasteries and heritage sites may charge entry fees. Book Toy Train tickets in advance during peak season.</div>
+  <div><strong>📷 Photography:</strong> Allowed at most places; early morning provides best light for capturing sunrise and mountain views.</div>
+  <div><strong>🌞 Weather Tips:</strong> Carry sunscreen, hats, and warm clothes especially for evenings and early mornings.</div>
+  <div><strong>🍲 Food:</strong> Try local momos, thukpa, and Darjeeling tea at local cafes for authentic flavors.</div>
+</div>
+    </div>
+</div>
+
+<div id="contact" class="info-container">
+  <div class="contact-info">
+    <img src="Contact-Us/contactus1.jfif" alt="Contact">
+    <div class="contact-details">
+      <strong>Contact Info Center</strong>
+      <p>India’s Tourism, MI Road Delhi</p>
+        <p>📞 +91 141 2822863</p>
+        <p>📧 info@indiatourism.gov.in</p>
+        <p>🕘 Mon–Sat, 9:00AM–6:00PM</p>
+    </div>
+  </div>
+</div>
+<!----------------------------------------------------------------------maps------------------------------------------->
+<div class="map-container">
+  <h2>Visit The Darjeeling</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30766738.48171446!2d60.9691763862997!3d19.725163578221917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1748703432187!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<p><a href=" https://maps.google.com" target="_blank">📍 Open in Google Maps</a></p>
+  <!------------------------------------------------------------------- Footer ---------------------------------------------------------------->
+<!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col about">
+        <h3>About Us</h3>
+        <p>
+          Explore india is a simple travel guide to help you discover beautiful place across India. 
+          From historic monuments to scenic landscape, we aim to make your journey more exciting 
+          and informed - no sign-up just exploration.
+        </p>
+      </div>
+      <div class="footer-col links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Destinations.html">Destinations</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col contact">
+        <h3>Get in touch</h3>
+         <p><i class="fas fa-map-marker-alt red-icon"></i> 3rd Floor, MG Road, New Delhi.</p>
+         <p><i class="fas fa-envelope red-icon"></i> info@exploreindia.com</p>
+         <p><i class="fas fa-phone red-icon"></i> +91 98765 43210</p>
+         <p><i class="fab fa-instagram red-icon"></i> Contact@exploreindia</p>
+      </div>
+      <div class="footer-col gallery">
+        <h3>Gallery</h3>
+        <table>
+          <tr>
+            <td colspan="2"><img src="Images/footer1.jpg" alt="Gallery 1" /></td>
+          </tr>
+          <tr>
+            <td><img src="images/footer2.jfif" alt="Gallery 2" /></td>
+            <td><img src="Images/footer3.jfif" alt="Gallery 3" /></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Explore India. All right reserved.</p>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="service.html">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+<script src="darjeeling.js"></script>
+</body>
+</html>

@@ -1,0 +1,711 @@
+/*----------------------------------------------------- General Reset -------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+:root{
+  --gray: gray;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: Arial,Poppins, sans-serif;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background:rgb(190, 188, 188);
+  color: #222;
+  overflow-x: hidden;
+}
+/*--------------------------------------------------------Home (index) Page  Navbar----------------------------------------------------------------- */
+ /* Navbar */
+    .navbar {
+      background: #000;
+      color: #fff;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .navbar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+      position: relative;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .nav-links a:hover {
+      color: red;
+    }
+    .toggle-btn {
+      color: white;
+      font-size: 1.5rem;
+      cursor: pointer;
+      display: none;
+    }
+    /* Dropdown Menu */
+    .dropdown-menu {
+      position: absolute;
+      right: 2rem;
+      top: 60px;
+      background: #111;
+      backdrop-filter: blur(15px);
+      border-radius: 10px;
+      overflow: hidden;
+      display: none;
+      flex-direction: column;
+      width: 250px;
+      transition: all 0.3s ease;
+      z-index: 999;
+    }
+    .dropdown-menu a {
+      padding: 1rem;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      border-bottom: 1px solid #222;
+    }
+
+    .dropdown-menu a:hover {
+      background: #222;
+    }
+    /* Responsive */
+    @media (max-width: 992px) {
+      .nav-links {
+        display: none;
+      }
+      .toggle-btn {
+        display: block;
+      }
+     .dropdown-menu.show {
+        display: flex;
+      }
+    }
+    @media (max-width: 576px) {
+      .dropdown-menu {
+        right: 1rem;
+        width: 90%;
+      }
+    }
+/*-----------------------------------------------------------Home page - Hero Section-------------------------------------------------------- */
+.hero {
+  position: relative;
+  background-image: url('Images/Nubra-Valley-in-Ladakh.webp');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 1;
+}
+
+.hero-text {
+  z-index: 2;
+  position: relative;
+  max-width: 800px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.hero-text h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.hero-text button {
+  background: black;
+  color: white;
+  font-weight: bold;
+  padding: 15px 25px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+.hero-text button:hover {
+  background: red;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero h3 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .hero button {
+    padding: 15px 25px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 0 10px;
+  }
+  .hero h3 {
+    font-size: 1.5rem;
+  }
+  .hero p {
+    font-size: 0.95rem;
+  }
+  .hero button {
+    font-size: 0.85rem;
+    padding: 10px 30px;
+  }
+}
+/* ---------------------------------------------------------- Home page - featured destinations ----------------------------------------------------- */
+.featured-section {
+  width: 100%;
+  padding: 40px 30px;
+  background: rgb(190, 188, 188);
+}
+/* Header */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.section-header h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.explore-link {
+  font-size: 1rem;
+  color: red;
+  font-weight: 600;
+  text-decoration: none;
+}
+.explore-link:hover {
+  color: darkred;
+}
+.explore-link i {
+  margin-left: 5px;
+}
+/* Grid Layout */
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+/* Cards */
+.destination-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  height: 400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.destination-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.destination-card:hover img {
+  transform: scale(1.05);
+}
+/* Overlay Content */
+.card-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.card-center {
+  text-align: center;
+  justify-content: center;
+  margin-top: 150px;
+  margin-bottom: auto;
+}
+.card-center h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.card-center p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+/* Button at Bottom */
+.learn-btn {
+  align-self: center;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+.learn-btn:hover {
+  background-color: red;
+  color: white;
+}
+/* Responsive Header Stack */
+@media (max-width: 600px) {
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+/* ------------------------------------------------------------Home page - About Section ----------------------------------------------------------*/
+.about-section {
+  width: 100%;
+  background-color: rgb(190, 188, 188);
+  padding: 40px 30px;
+}
+.about-container {
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.about-text {
+  flex: 1 1 55%;
+}
+.about-text h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 650px;
+}
+.about-image {
+  flex: 1 1 40%;
+  text-align: center;
+}
+.about-image img {
+  max-width: 100%;
+  width: 700px;
+  height: 200px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-text p {
+    max-width: 100%;
+  }
+  .about-text, .about-image {
+    flex: 1 1 100%;
+  }
+}
+/*-------------------------------------------------Home Page (top places) -  Carousel ------------------------------------------------------------*/
+.slider-container {
+  width: 100%;
+  max-width: 1325px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.slider {
+  position: relative;
+  width: 100%;
+}
+.slider-window {
+  overflow: hidden;
+  width: 100%;
+}
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.card {
+  flex: 0 0 33.3333%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.card-overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.card-overlay img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+.card-overlay::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+.card-overlay p {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  z-index: 2;
+  margin: 0;
+  padding: 6px 1px;
+  border-radius: 6px;
+  text-align: center;
+}
+/* Navigation Buttons */
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 24px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 3;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+.slider:hover .nav-btn,
+.slider-container:hover .nav-btn {
+  opacity: 1;
+  pointer-events: auto;
+}
+.nav-btn:hover {
+  background-color: red;
+  transform: translateY(-50%) scale(1.1);
+}
+.prev {
+  left: -30px;
+}
+.next {
+  right: -30px;
+}
+/* Dots */
+.dots-container {
+  text-align: center;
+  margin-top: 15px;
+}
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 4px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.dot.active {
+  background-color: red;
+}
+/* Responsive */
+@media (max-width: 1024px) {
+  .card {
+    flex: 0 0 50%;
+  }
+  .prev {
+    left: -25px;
+  }
+  .next {
+    right: -25px;
+  }
+}
+@media (max-width: 600px) {
+  .card {
+    flex: 0 0 100%;
+  }
+  .prev {
+    left: -20px;
+  }
+  .next {
+    right: -20px;
+  }
+}
+
+/*---------------------------------------------------Home Page -  Recommendations ----------------------------------------------------*/
+.recommendation {
+  background-color: rgb(190, 188, 188);
+  padding: 40px 30px;
+  text-align: center;
+  width: 100%;
+}
+.recommendation h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+.rec-card {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+.rec-card:hover {
+  transform: scale(1.02);
+}
+/* Full overlay */
+.rec-card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Adjust opacity here */
+  z-index: 0;
+}
+.label {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  z-index: 1;
+}
+/* Responsive */
+@media (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+/*-----------------------------------------------------Footer----------------------------------------------------- */
+.footer {
+  background-color: rgb(190, 188, 188);
+  padding: 40px 20px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-col.links {
+  margin-left: 80px;
+}
+
+.footer h3 {
+  margin-bottom: 15px;
+  font-size: 25px;
+}
+
+.footer p,
+.footer ul,
+.footer td {
+  font-size: 18px;
+  color: #333;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 8px;
+}
+
+.footer ul li a {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer ul li a:hover {
+  color: red;
+}
+.footer-col.contact i {
+  margin-right: 10px;
+  font-size: 18px;
+  color: black; /* Default icon color */
+}
+
+.footer-col.contact .red-icon {
+  color: red; /* Red color for selected icons */
+}
+
+.footer-col.gallery table {
+  border-spacing: 5px;
+}
+
+.footer-col.gallery img {
+  width: 100%;
+  height: 110px;
+  display: block;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-bottom p {
+  font-weight: medium;
+  color: white;
+}
+
+.footer-links a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: red;
+}
+
+/* ------------------------ Responsive CSS ------------------------ */
+
+@media (max-width: 1024px) {
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .footer-col {
+    flex: 1 1 45%;
+  }
+
+  .footer-col.links {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .footer-col {
+    flex: 1 1 100%;
+  }
+  .footer-col.gallery table {
+    width: 100%;
+  }
+
+  .footer-col.gallery td {
+    width: 50%;
+  }
+
+  .footer-col.gallery img {
+    height: 90px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .footer-links {
+    margin-top: 10px;
+  }
+
+  .footer-links a {
+    display: inline-block;
+    margin: 5px 10px 0;
+  }
+}

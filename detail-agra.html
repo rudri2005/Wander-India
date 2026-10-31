@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Explore India </title>
+    <link rel="stylesheet" href="agra.css">
+</head>
+<body>
+<!--------------------------------------------------- Header/Navbar -------------------------------------------------------->
+ <header class="navbar">
+    <div class="container">
+      <div class="logo">Explore India</div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="Destinations.html">Destinations</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="toggle-btn" id="toggle-btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <!-- Dropdown Menu (for mobile) -->
+    <div class="dropdown-menu" id="dropdown-menu">
+      <a href="index.html">Home</a>
+      <a href="Destinations.html">Destinations</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+  <!----------------------------------------------------Hero Section------------------------------------------------------------ -->
+  <section class="hero" id="hero">
+    <div class="overlay"></div>
+    <div class="hero-text">
+      <h1>Agra - Home Of Taj Mahal</h1>
+    </div>
+  </section>
+<!------------------------------------------------------------overview of agra--------------------------------------------->
+  <div class="overview-container">
+  <div class="text-section">
+    <h1>The ancient city of architectural wonders</h1>
+    <p>
+      Agra, located in the northern Indian state of Uttar Pradesh, is a city that resonates with grandeur,
+      heritage, and architectural brilliance. It sits majestically on the banks of the Yamuna River and has
+      long been a cornerstone of India’s rich cultural tapestry. Though it is globally synonymous with the
+      Taj Mahal, Agra’s historical and cultural significance stretches far beyond this iconic monument.
+      Historically, Agra rose to prominence during the reign of the Delhi Sultanate in the 11th century
+      but truly flourished under the Mughals in the 16th and 17th centuries. It served as the capital of
+      the Mughal Empire under rulers such as Akbar, Jahangir, and Shah Jahan, who transformed the city into
+      a center of art, learning, commerce, and architecture.
+      Under Emperor Akbar’s vision, Agra became the site of many monumental structures, including the
+      massive Agra Fort and the planned city of Fatehpur Sikri, located just outside its bounds. Shah Jahan,
+      Akbar’s grandson, elevated the city’s splendor with the creation of the Taj Mahal—an eternal symbol of
+      love built in memory of his wife Mumtaz Mahal.
+    </p>
+  </div>
+  <div class="image-section">
+    <img src="Destinations/agra-architecture.webp" alt="Agra Architecture" />
+  </div>
+</div>
+
+  <!-------------------------------------------top place to visit in agra----------------------------------------->
+<h2>Top Places to Visit</h2>
+  <div class="carousel-wrapper">
+    <button class="carousel-btn prev-btn">&#8592;</button>
+    <div class="carousel-container">
+      <div class="carousel-track">
+        <div class="carousel-card">
+          <div class="image-wrapper">
+            <img src="Destinations/mehtab bagh.jfif" alt="Mehtab Bagh">
+            <div class="overlay"></div>
+          </div>
+          <span>Mehtab Bagh</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+            <img src="Destinations/photo-1524492412937-b28074a5d7da.jfif" alt="Taj Mahal">
+            <div class="overlay"></div>
+          </div>
+          <span>Taj Mahal</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+            <img src="Destinations/ram-bagh.jpg" alt="Ram Bagh">
+            <div class="overlay"></div>
+          </div>
+          <span>Ram Bagh</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+            <img src="Destinations/agra fort.jfif" alt="Agra Fort">
+            <div class="overlay"></div>
+          </div>
+          <span>Agra Fort</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+            <img src="Destinations/fatehpur sikri.jpg" alt="Fatehpur Sikri">
+            <div class="overlay"></div>
+          </div>
+          <span>Fatehpur Sikri</span>
+        </div>
+        <div class="carousel-card">
+          <div class="image-wrapper">
+            <img src="Destinations/Itmad-ud-Daulah.jfif" alt="Itmad-ud-Daulah">
+            <div class="overlay"></div>
+          </div>
+          <span>Itmad-ud-Daulah</span>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-btn next-btn">&#8594;</button>
+  </div>
+  <div class="carousel-dots"></div>
+<!-------------------------------------------------------------facts--------------------------------------------------->
+  <div class="fact-container">
+  <div class="image-box">
+    <img src="Destinations/agra-facts.jfif" alt="Tourist circuit image">
+  </div>
+  <div class="text-box">
+    <h2>Fantastic Facts</h2>
+    <p>
+      Agra also finds itself strategically placed on popular tourist circuits.
+      Explore the Golden Triangle tourist circuit, along with Delhi and Jaipur,
+      or delve deeper into the state’s rich culture through the Uttar Pradesh
+      Heritage Arc, connecting Agra to Lucknow, the state capital, and the holy
+      city of Varanasi.
+    </p>
+  </div>
+</div>
+
+<!--------------------------------------------------informations------------------------------------------------------>
+<h2>Explore Agra</h2>
+<div class="tab-bar">
+  <div class="tab active" onclick="showTab('attractions')">Top Attractions</div>
+  <div class="tab" onclick="showTab('food')">Local Food</div>
+  <div class="tab" onclick="showTab('tips')">Travel Tips</div>
+  <div class="tab" onclick="showTab('contact')">Contact</div>
+</div>
+
+<div id="attractions" class="info-container active">
+  <div class="attraction-grid">
+    <div class="card">
+      <img src="Destinations/photo-1524492412937-b28074a5d7da.jfif" alt="Taj Mahal">
+      <div class="card-body">
+        <h4>Taj Mahal</h4>
+        <p>Iconic white Marble mausoleum<br>Dharmapuri, near Yamuna River, Agra, Uttar Pradesh.<br>6:00AM - 6:30PM (Closed on Fridays)</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="Destinations/agra fort.jfif" alt="Agra Fort">
+      <div class="card-body">
+        <h4>Agra Fort</h4>
+        <p>Red sandstone fort<br>Rakabganj, near Taj Mahal, Agra, Uttar Pradesh.<br>6:00AM - 6:00PM</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="Destinations/mehtab bagh.jfif" alt="Mehtab Bagh">
+      <div class="card-body">
+        <h4>Mehtab Bagh</h4>
+        <p>Riverfront garden with Taj view<br>Opposite Taj Mahal, across the Yamuna River, Agra, Uttar Pradesh.<br>Sunrise to Sunset</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="Destinations/fatehpur sikri.jpg" alt="Fatehpur Sikri">
+      <div class="card-body">
+        <h4>Fatehpur Sikri</h4>
+        <p>Historic city by Akbar<br>40 km west of Agra, near Bharatpur, Uttar Pradesh.<br>6:00AM - 6:30PM</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="food" class="info-container">
+  <div class="food-grid">
+    <div class="card">
+      <img src="Destinations/panchi petha.jfif" alt="Panchi Petha">
+      <div class="card-body">
+        <h4>Panchi Petha</h4>
+        <p>Famous sweet of Agra<br>Hari Parvat Crossing, Sadar Bazaar, Agra.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="Destinations/jonay place.jfif" alt="Joney's Place">
+      <div class="card-body">
+        <h4>Joney’s Place</h4>
+        <p>Mughlai dishes, thalis and lassi<br>Near South Gate of Taj Mahal, Taj Ganj, Agra.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="Destinations/devram sweets.jfif" alt="Deviram Sweets">
+      <div class="card-body">
+        <h4>Deviram Sweets</h4>
+        <p>Popular for Bedai & Jalebi<br>M.G. Road, Pratap Pura, near St. John’s College, Agra.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="tips" class="info-container">
+  <div class="travel-tips">
+    <img src="Destinations/darjeeling.jpg" alt="Tips Background">
+    <div class="tip-details">
+      <div><strong>💼 Shopping:</strong> Marble inlay, shoes, crafts. Try Sadar & Kinari Bazaar.</div>
+      <div><strong>🚕 Transport:</strong> Use rickshaws, cabs. From Delhi: Gatimaan Express or car.</div>
+      <div><strong>⚠️ Safety:</strong> Avoid touts, drink bottled water, watch valuables.</div>
+      <div><strong>🗕️ Best Time:</strong> October–March. Avoid April–June heat.</div>
+      <div><strong>🎟️ Entry Tickets:</strong> Book online for the Taj Mahal to avoid queues.</div>
+      <div><strong>📷 Photography:</strong> Allowed at most places. Taj Mahal bans inside photography.</div>
+      <div><strong>👞 Footwear:</strong> Remove shoes before mosques/temples. Carry socks/covers.</div>
+      <div><strong>🍽️ Food Hygiene:</strong> Eat at busy places. Avoid raw street food.</div>
+      <div><strong>🌐 Connectivity:</strong> Good mobile networks. Download offline maps.</div>
+      <div><strong>💱 Currency:</strong> Carry cash. ATMs may be far from sites.</div>
+    </div>
+  </div>
+</div>
+
+<div id="contact" class="info-container">
+  <div class="contact-info">
+    <img src="Contact-Us/contactus1.jfif" alt="Contact">
+    <div class="contact-details">
+      <strong>Contact Info Center</strong>
+      <p>India’s Tourism, MI Road Delhi</p>
+        <p>📞 +91 141 2822863</p>
+        <p>📧 info@indiatourism.gov.in</p>
+        <p>🕘 Mon–Sat, 9:00AM–6:00PM</p>
+    </div>
+  </div>
+</div>
+<!----------------------------------------------------------------------maps------------------------------------------->
+<div class="map-container">
+  <h2>Visit the Agra</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30766738.48171446!2d60.9691763862997!3d19.725163578221917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1748703432187!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<p><a href=" https://maps.google.com" target="_blank">📍 Open in Google Maps</a></p>
+  <!------------------------------------------------------------------- Footer ---------------------------------------------------------------->
+<!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col about">
+        <h3>About Us</h3>
+        <p>
+          Explore india is a simple travel guide to help you discover beautiful place across India. 
+          From historic monuments to scenic landscape, we aim to make your journey more exciting 
+          and informed - no sign-up just exploration.
+        </p>
+      </div>
+      <div class="footer-col links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Destinations.html">Destinations</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col contact">
+        <h3>Get in touch</h3>
+         <p><i class="fas fa-map-marker-alt red-icon"></i> 3rd Floor, MG Road, New Delhi.</p>
+         <p><i class="fas fa-envelope red-icon"></i> info@exploreindia.com</p>
+         <p><i class="fas fa-phone red-icon"></i> +91 98765 43210</p>
+         <p><i class="fab fa-instagram red-icon"></i> Contact@exploreindia</p>
+      </div>
+      <div class="footer-col gallery">
+        <h3>Gallery</h3>
+        <table>
+          <tr>
+            <td colspan="2"><img src="Images/footer1.jpg" alt="Gallery 1" /></td>
+          </tr>
+          <tr>
+            <td><img src="images/footer2.jfif" alt="Gallery 2" /></td>
+            <td><img src="Images/footer3.jfif" alt="Gallery 3" /></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Explore India. All right reserved.</p>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="service.html">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+<script src="agra.js"></script>
+</body>
+</html>
